@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script type="text/javascript">
+        var languages = JSON.parse('{"en":{"displayName":"English","shortName":"EN"},"tr":{"displayName":"Turkish","shortName":"TR"},"de":{"displayName":"German","shortName":"DE"},"ch":{"displayName":"Chinese","shortName":"CH"},"ar":{"displayName":"Arabic - RTL","shortName":"AR","isRTL":true}}');
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard</title>
+    <!-- Style CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+    <!--LIBRARY CSS--->
+    <link rel="stylesheet" href="/app/libs/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="/app/libs/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" id="lpx-js-bundle-style" href="/app/css/js-bundle.css">
+    <link rel="stylesheet" id="lpx-layout-bundle-style-ltr" href="/app/css/layout-bundle.css">
+    <link rel="stylesheet" href="/app/css/demo.css">
+    <link rel="stylesheet" type="text/css" href="/app/libs/highlight.js/styles/stackoverflow-dark.css">
+
+    <link href="/app/libs/jstree/themes/default/style.min.css" type="text/css" rel="stylesheet">
+    <link href="/app/libs/toastr/toastr.min.css" type="text/css" rel="stylesheet">
+    <link href="/app/libs/fullcalendar/main.min.css" type="text/css" rel="stylesheet">
+    <script src="/app/js/head.bundle.min.js"></script>
+    <link href="/app/libs/perfect-scrollbar/css/perfect-scrollbar.css" type="text/css" rel="stylesheet">
+    <link href="/app/libs/select2/css/select2.min.css" type="text/css" rel="stylesheet">
+    <link href="/app/libs/dropzone/dropzone.css" type="text/css" rel="stylesheet">
+
+
+
+    <link type="text/css" data-thor="true" id="lpx-theme-bootstrap-light" href="/app/css/bootstrap-light.css"
+        rel="stylesheet">
+    <link type="text/css" data-thor="true" id="lpx-theme-color-light" href="/app/css/light.css" rel="stylesheet">
+    <link rel="stylesheet" href="/app/libs/highlight.js/styles/github.css" id="github-css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar sticky-top navbar-expand-lg  main-navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="/assets/img/logo-favicon_1.svg" alt="logo" width="30" class="me-1">
+                    <span>LEPTON</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li> -->
+
+                    </ul>
+                    <div class="btns-auth">
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle text-white btn-flex" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <ion-icon class="icon" name="person-circle-outline"></ion-icon>
+                                <span>Hasan</span>
+                                <ion-icon class="mx-1" name="chevron-down-outline"></ion-icon>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <!-- <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li> -->
+                                <li>
+                                    <a class="dropdown-item btn-flex" href="#">
+                                        <ion-icon name="log-out-outline"></ion-icon>
+                                        <span class="mx-1">Logout</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- <a href="" class="text-white">Login</a> -->
+
+                        <a href="" class="text-white btn-flex">
+                            <ion-icon class="icon-lang" name="globe-outline"></ion-icon>
+                            <span class="ms-1">EN</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="side-nav">
+            <ul>
+                <li><a href="./index.html">
+                        <ion-icon class="icon" name="home"></ion-icon>Home
+                    </a></li>
+                <li><a href="./page2.html">
+                        <ion-icon class="icon" name="infinite-outline"></ion-icon>Configuration
+                    </a></li>
+                <li><a href="./page3.html" class="active">
+                        <ion-icon class="icon" name="server-outline"></ion-icon>Base DNs
+                    </a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-page2">
+        <section class="section-setting">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="setting">
+                        <div class="d-flex align-items-start justify-content-between flex-col">
+                            <div class="section-setting-text">
+                                <h3>Base DNs</h3>
+                                <p class="text-head">You can review the paid programs we use.</p>
+                            </div>
+                            <div class="section-setting-btns">
+                                <!-- Button Create -->
+                                <button id="modalCreateBtn" class="btn btn-outline-success">Add Base DN</button>
+                            </div>
+                        </div>
+                        <div class="overflow-auto">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">DN</th>
+                                        <th scope="col">Sync User Group</th>
+                                        <th scope="col">Sync group members</th>
+                                        <th scope="col">Auto Sync</th>
+                                        <th scope="col">Corn. Exp.</th>
+                                        <th scope="col">Exception</th>
+                                        <th scope="col" class="ps-2">Status</th>
+                                        <th scope="col" class="text-center">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td scope="row">1</td>
+                                        <td>
+                                            Ahmed kH
+                                        </td>
+                                        <td>
+                                            cacs-asd2398
+                                        </td>
+                                        <td class="ps-3">No</td>
+                                        <td class="ps-3">true</td>
+                                        <td class="ps-3">false</td>
+                                        <td>Lorem ipsum dolor sit</td>
+                                        <td>324234</td>
+                                        <td>
+                                            <button class="btn btn-running">
+                                                Running
+                                            </button>
+                                        </td>
+                                        <td class="d-flex align-items-center btns-table justify-content-center">
+                                            <div class="form-group">
+                                                <input type="checkbox" hidden="hidden" id="user1">
+                                                <label class="switch" for="user1"></label>
+                                            </div>
+                                            <!-- Button Edit -->
+                                            <button id="modalUpdateBtn" class="btn btn-outline-success mx-2">
+                                                <ion-icon class="icon" name="create-outline"></ion-icon>
+                                            </button>
+
+                                            <button id="modalDeleteBtn" class="btn btn-outline-danger">
+                                                <ion-icon class="icon" name="trash-outline"></ion-icon>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">1</td>
+                                        <td>
+                                            Ahmed kH
+                                        </td>
+                                        <td>
+                                            cacs-asd2398
+                                        </td>
+                                        <td class="ps-3">Yes</td>
+                                        <td class="ps-3">true</td>
+                                        <td class="ps-3">false</td>
+                                        <td>Lorem ipsum dolor sit</td>
+                                        <td>324234</td>
+                                        <td>
+                                            <button class="btn btn-stopped">
+                                                Stopped
+                                            </button>
+                                        </td>
+                                        <td class="d-flex align-items-center btns-table justify-content-center">
+                                            <div class="form-group">
+                                                <input type="checkbox" hidden="hidden" id="user2">
+                                                <label class="switch" for="user2"></label>
+                                            </div>
+                                            <!-- Button Edit -->
+                                            <button id="modalUpdateBtn" class="btn btn-outline-success mx-2">
+                                                <ion-icon class="icon" name="create-outline"></ion-icon>
+                                            </button>
+                                            <!-- Button Delete -->
+                                            <button id="modalDeleteBtn" class="btn btn-outline-danger">
+                                                <ion-icon class="icon" name="trash-outline"></ion-icon>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">1</td>
+                                        <td>
+                                            Ahmed kH
+                                        </td>
+                                        <td>
+                                            cacs-asd2398
+                                        </td>
+                                        <td class="ps-3">Fixed</td>
+                                        <td class="ps-3">true</td>
+                                        <td class="ps-3">false</td>
+                                        <td>Lorem ipsum dolor sit</td>
+                                        <td>324234</td>
+                                        <td>
+                                            <button class="btn btn-running">
+                                                Running
+                                            </button>
+                                        </td>
+                                        <td class="d-flex align-items-center btns-table justify-content-center">
+                                            <div class="form-group">
+                                                <input type="checkbox" hidden="hidden" id="user3">
+                                                <label class="switch" for="user3"></label>
+                                            </div>
+                                            <!-- Button Edit -->
+                                            <button id="modalUpdateBtn" class="btn btn-outline-success mx-2">
+                                                <ion-icon class="icon" name="create-outline"></ion-icon>
+                                            </button>
+
+                                            <button id="modalDeleteBtn" class="btn btn-outline-danger">
+                                                <ion-icon class="icon" name="trash-outline"></ion-icon>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">1</td>
+                                        <td>
+                                            Ahmed kH
+                                        </td>
+                                        <td>
+                                            cacs-asd2398
+                                        </td>
+                                        <td>Yes</td>
+                                        <td>true</td>
+                                        <td>false</td>
+                                        <td>Lorem ipsum dolor sit</td>
+                                        <td>324234</td>
+                                        <td>
+                                            <button class="btn btn-stopped">
+                                                Stopped
+                                            </button>
+                                        </td>
+                                        <td class="d-flex align-items-center btns-table justify-content-center">
+                                            <div class="form-group">
+                                                <input type="checkbox" hidden="hidden" id="user4">
+                                                <label class="switch" for="user4"></label>
+                                            </div>
+                                            <!-- Button Edit -->
+                                            <button id="modalUpdateBtn" class="btn btn-outline-success mx-2">
+                                                <ion-icon class="icon" name="create-outline"></ion-icon>
+                                            </button>
+
+                                            <button id="modalDeleteBtn" class="btn btn-outline-danger">
+                                                <ion-icon class="icon" name="trash-outline"></ion-icon>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">1</td>
+                                        <td>
+                                            Ahmed kH
+                                        </td>
+                                        <td>
+                                            cacs-asd2398
+                                        </td>
+                                        <td class="ps-3">Yes</td>
+                                        <td class="ps-3">true</td>
+                                        <td class="ps-3">false</td>
+                                        <td>Lorem ipsum dolor sit</td>
+                                        <td>324234</td>
+                                        <td>
+                                            <button class="btn btn-running">
+                                                Running
+                                            </button>
+                                        </td>
+                                        <td class="d-flex align-items-center btns-table justify-content-center">
+                                            <div class="form-group">
+                                                <input type="checkbox" hidden="hidden" id="user5">
+                                                <label class="switch" for="user5"></label>
+                                            </div>
+                                            <!-- Button Edit -->
+                                            <button id="modalUpdateBtn" class="btn btn-outline-success mx-2">
+                                                <ion-icon class="icon" name="create-outline"></ion-icon>
+                                            </button>
+
+                                            <button id="modalDeleteBtn" class="btn btn-outline-danger">
+                                                <ion-icon class="icon" name="trash-outline"></ion-icon>
+                                            </button>
+                                        </td>
+                                    </tr>
+
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+
+
+    <!---Update--->
+    <div class="modal fade" id="modalUpdate">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="CreateLabelLabel">Update Custom Field</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="form-modal">
+                        <div class="row align-items-start">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="name" class="">Name :</label>
+                                    <input type="text" class="form-control" id="name">
+                                </div>
+                            </div>
+                            <div class="col-md-12 mt-2">
+                                <div class="form-group">
+                                    <label for="Dn">DN :</label>
+                                    <input type="text" class="form-control" id="Dn">
+                                </div>
+                            </div>
+                            <hr class="hr my-3" />
+                            <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <label for="" class="mb-2">Sync User Group:</label>
+                                    <div class="d-flex align-items-center justify-content-between flex-checkbox">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="SyncUser" id="SyncUser1">
+                                            <label class="form-check-label" for="SyncUser1">
+                                                No
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="SyncUser" id="SyncUser2"
+                                                checked>
+                                            <label class="form-check-label" for="SyncUser2">
+                                                Yes
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="SyncUser" id="SyncUser3">
+                                            <label class="form-check-label" for="SyncUser3">
+                                                Fixed
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="form-group">
+                                    <label for="Fixeduser">Fixed user group :</label>
+                                    <input type="text" class="form-control" id="Fixeduser">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="syncGroup" class="mb-2">Sync group members :</label>
+                                    <div class="form-group">
+                                        <input type="checkbox" hidden="hidden" id="syncGroup">
+                                        <label class="switch" for="syncGroup"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="hr my-3" />
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="Cron">Cron Expr :</label>
+                                    <input type="text" class="form-control" id="Cron">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="autoSync" class="mb-2"> Auto Sync :</label>
+                                    <div class="form-group">
+                                        <input type="checkbox" hidden="hidden" id="autoSync">
+                                        <label class="switch" for="autoSync"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="hr my-3" />
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="exceptionDNs">Exception DNs :</label>
+                                    <textarea class="form-control" id="exceptionDNs" rows="4">
+                                         </textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                        Close
+                    </button>
+                    <button type="button" class="btn btn-success">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---Create--->
+    <div class="modal fade" id="modalCreate">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="CreateLabelLabel">Add Custom Field</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <form action="" class="form-modal">
+                        <div class="row align-items-start">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="name" class="">Name :</label>
+                                    <input type="text" class="form-control" id="name">
+                                </div>
+                            </div>
+                            <div class="col-md-12 mt-2">
+                                <div class="form-group">
+                                    <label for="Dn">DN :</label>
+                                    <input type="text" class="form-control" id="Dn">
+                                </div>
+                            </div>
+                            <hr class="hr my-3" />
+                            <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <label for="" class="mb-2">Sync User Group:</label>
+                                    <div class="d-flex align-items-center justify-content-between flex-checkbox">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="SyncUser" id="SyncUser4">
+                                            <label class="form-check-label" for="SyncUser4">
+                                                No
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="SyncUser" id="SyncUser5"
+                                                checked>
+                                            <label class="form-check-label" for="SyncUser5">
+                                                Yes
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="SyncUser" id="SyncUser6">
+                                            <label class="form-check-label" for="SyncUser6">
+                                                Fixed
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="Fixeduser">Fixed user group :</label>
+                                    <input type="text" class="form-control" id="Fixeduser">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="syncGroup" class="mb-2">Sync group members :</label>
+                                    <div class="form-group">
+                                        <input type="checkbox" hidden="hidden" id="syncGroup2">
+                                        <label class="switch" for="syncGroup2"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="hr my-3" />
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="Cron">Cron Expr :</label>
+                                    <input type="text" class="form-control" id="Cron">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="autoSync" class="mb-2"> Auto Sync :</label>
+                                    <div class="form-group">
+                                        <input type="checkbox" hidden="hidden" id="autoSync2">
+                                        <label class="switch" for="autoSync2"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="hr my-3" />
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="exceptionDNs">Exception DNs :</label>
+                                    <textarea class="form-control" id="exceptionDNs" rows="4">
+                                         </textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---Delete--->
+    <div class="modal fade" id="modalDelete">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="DeleteLabelLabel">Delete Custom Field</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <h4>Are sure of the deleting process ?</h4>
+                    <p>Note that the item will be completely deleted</p>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        var leptonXConfig = {
+            defaultSettings: {
+                appearance: 'system',
+                containerWidth: 'full',
+            },
+        };
+    </script>
+    <script src="/app/libs/jquery/jquery.min.js"></script>
+    <script id="bootstrap-js" src="/app/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/app/libs/jstree/jstree.min.js"></script>
+    <script src="/app/libs/fullcalendar/main.min.js"></script>
+    <script src="/app/libs/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+    <script src="/app/js/lepton-x.bundle.min.js"></script>
+
+    <script src="/app/libs/datatables.net/jquery.dataTables.min.js"></script>
+    <script src="/app/libs/datatables.net-bs5/dataTables.bootstrap5.min.js"></script>
+    <script src="/app/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script src="/app/libs/toastr/toastr.min.js"></script>
+    <script src="/app/js/demo.bundle.min.js"></script>
+
+    <script type="text/javascript">
+        (function () {
+            leptonx.LanguageSettingEvent.on(function (event) {
+                // handle language change here
+                console.log(event);
+            });
+        })();
+
+        (function () {
+            document.addEventListener('DOMContentLoaded', function () {
+                leptonx.init.run(); // init leptonx
+            });
+        })();
+    </script>
+
+    <script type="text/javascript">
+        var direction = document.querySelector('html').getAttribute('dir');
+        (function () {
+            function createStyleUrl(theme, direction) {
+                const styleName = direction === 'rtl' ? `${theme}.rtl` : theme;
+                return `/app/css/${styleName}.css`;
+            }
+
+            function createId(theme, type) {
+                return theme && `lpx-theme-${type}-${theme}`;
+            }
+
+            function isAlreadyLoaded(id) {
+                return document.querySelector(`link[id^="lpx-theme-${id}-"]`)?.id;
+            }
+
+            function loadThemeCSS(key, event, cssPrefix, force = false) {
+                const newThemeId = createId(event.detail.theme, key);
+                const previousThemeId = createId(event.detail.previousTheme, key);
+
+                const loadedCSS = isAlreadyLoaded(key);
+                if (newThemeId !== loadedCSS || force) {
+                    leptonx.replaceStyleWith(
+                        createStyleUrl(cssPrefix + event.detail.theme, document.documentElement.dir),
+                        newThemeId,
+                        previousThemeId || loadedCSS
+                    );
+                }
+            }
+
+            function loadLayoutCSS(direction) {
+                leptonx.replaceStyleWith(
+                    createStyleUrl('layout-bundle', direction),
+                    `lpx-layout-bundle-style-${direction}`,
+                    `lpx-layout-bundle-style-${direction === 'rtl' ? 'ltr' : 'rtl'}`
+                );
+            }
+
+            leptonx.CSSLoadEvent.on(event => {
+                loadHighlightTheme(event);
+                loadThemeCSS('bootstrap', event, 'bootstrap-');
+                loadThemeCSS('color', event, '');
+            });
+
+            leptonx.LanguageDirectionEvent.on(event => {
+                //TODO: find a better way ltr/rtl change
+                window.location.reload();
+                /*
+                 const direction = event.detail.direction;
+                 loadLayoutCSS(direction);
+                 ['bootstrap', 'color'].forEach(selector => {
+                   const currentThemeElem = document.querySelector(`link[id^="lpx-theme-${selector}-"]`);
+                   let styleUrl = currentThemeElem.href.split('/app/css/');
+                   styleUrl = styleUrl[1].split('.css');
+                   if (direction === 'rtl') {
+                     styleUrl = '/app/css/' + styleUrl[0] + '.rtl.css';
+                   } else {
+                     styleUrl = '/app/css/' + styleUrl[0].replace('.rtl', '') + '.css';
+                   }
+                   leptonx.replaceStyleWith(
+                           styleUrl,
+                           currentThemeElem.id,
+                           currentThemeElem.id
+                   );
+                 });
+           
+                 const AttachmentMap = {
+           
+                   right: direction === 'rtl' ? 'left' : 'right',
+                   left:  direction === 'rtl' ? 'right' : 'left'
+                 }
+           
+                 function bsPopperConfig(defaultBsPopperConfig) {
+                   return {
+                     placement: AttachmentMap[defaultBsPopperConfig.placement] || defaultBsPopperConfig.placement,
+                   };
+                 }
+                 leptonx.initBootstrap(bsPopperConfig);
+                 */
+            });
+
+
+
+            function loadHighlightTheme(event) {
+                const theme = event.detail.theme === 'dark' ? '-dark' : '';
+                const link = document.createElement('link');
+                link.setAttribute('rel', 'stylesheet');
+                link.setAttribute('href', `/app/libs/highlight.js/styles/github${theme}.css`);
+                link.setAttribute('id', `github${theme}-css`);
+                const elem = document.querySelector(`#github${theme}-css`);
+                if (elem) {
+                    elem.parentNode.removeChild(elem);
+                }
+                document.head.appendChild(link);
+            }
+        })();
+
+
+    </script>
+
+    <!---ionicons--->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        $("#modalCreateBtn").on("click", function () {
+            $('#modalCreate').modal("show")
+        });
+
+        //trigger next modal
+        $("#modalUpdateBtn").on("click", function () {
+            $('#modalUpdate').modal("show")
+        });
+
+        $("#modalDeleteBtn").on("click", function () {
+            $('#modalDelete').modal("show")
+        });
+    </script>
+</body>
+
+</html>

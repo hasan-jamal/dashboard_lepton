@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard</title>
+    <!--Fonts Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Style CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+    <!--LIBRARY CSS--->
+    <link rel="icon" type="image/x-icon" href="/assets/img/logo-favicon_1.svg">
+    <link rel="stylesheet" href="/app/libs/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="/app/libs/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" id="lpx-js-bundle-style" href="/app/css/js-bundle.css">
+    <link rel="stylesheet" id="lpx-layout-bundle-style-ltr" href="/app/css/layout-bundle.css">
+    <link rel="stylesheet" href="/app/css/demo.css">
+    <link rel="stylesheet" type="text/css" href="/app/libs/highlight.js/styles/stackoverflow-dark.css">
+
+    <link href="/app/libs/jstree/themes/default/style.min.css" type="text/css" rel="stylesheet">
+    <link href="/app/libs/toastr/toastr.min.css" type="text/css" rel="stylesheet">
+    <link href="/app/libs/fullcalendar/main.min.css" type="text/css" rel="stylesheet">
+    <script src="/app/js/head.bundle.min.js"></script>
+    <link href="/app/libs/perfect-scrollbar/css/perfect-scrollbar.css" type="text/css" rel="stylesheet">
+    <link href="/app/libs/select2/css/select2.min.css" type="text/css" rel="stylesheet">
+    <link href="/app/libs/dropzone/dropzone.css" type="text/css" rel="stylesheet">
+
+
+    <link type="text/css" data-thor="true" id="lpx-theme-bootstrap-light" href="/app/css/bootstrap-light.css"
+        rel="stylesheet">
+    <link type="text/css" data-thor="true" id="lpx-theme-color-light" href="/app/css/light.css" rel="stylesheet">
+    <link type="text/css" data-thor="true" id="github-css" href="/app/libs/highlight.js/styles/github.css"
+        rel="stylesheet">
+</head>
+</head>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg  main-navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="/assets/img/logo-favicon_1.svg" alt="logo" width="30" class="me-1">
+                    <span>LEPTON</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li> -->
+
+                    </ul>
+                    <div class="btns-auth">
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle text-white btn-flex" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <ion-icon class="icon" name="person-circle-outline"></ion-icon>
+                                <span>Hasan</span>
+                                <ion-icon class="mx-1" name="chevron-down-outline"></ion-icon>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                            </ul>
+                        </div>
+                        <!-- <a href="" class="text-white">Login</a> -->
+
+                        <a href="" class="text-white btn-flex">
+                            <ion-icon class="icon-lang" name="globe-outline"></ion-icon>
+                            <span class="ms-1">EN</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="side-nav">
+            <ul>
+                <li><a href="./index.html" class="active">
+                        <ion-icon class="icon" name="home"></ion-icon>Home
+                    </a></li>
+                <li><a href="./page2.html">
+                        <ion-icon class="icon" name="infinite-outline"></ion-icon>Configuration
+                    </a></li>
+                <li><a href="./page3.html">
+                        <ion-icon class="icon" name="server-outline"></ion-icon>Base DNs
+                    </a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="section-welcome">
+            <h1>
+                Welcome
+                <span>Hasan</span>
+                ,
+            </h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem odit </p>
+        </section>
+        <section class="section-boxs">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="box-card">
+                        <div class="box-icon color-box">
+                            <ion-icon class="icon" name="git-network-outline"></ion-icon>
+                        </div>
+                        <div class="text-box">
+                            <p>Total Jobs</p>
+                            <h1>55</h1>
+                        </div>
+                        <div class="rate-text below">
+                            <p>- 15%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box-card">
+                        <div class="box-icon color-box1">
+                            <ion-icon class="icon" name="reader-outline"></ion-icon>
+                        </div>
+                        <div class="text-box">
+                            <p>Total Tasks</p>
+                            <h1>65</h1>
+                        </div>
+                        <div class="rate-text over">
+                            <p>+ 35%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box-card">
+                        <div class="box-icon color-box2">
+                            <ion-icon class="icon" name="people-outline"></ion-icon>
+                        </div>
+                        <div class="text-box">
+                            <p>Total Users</p>
+                            <h1>25</h1>
+                        </div>
+                        <div class="rate-text below">
+                            <p>- 35%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <!---ionicons--->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script type="text/javascript">
+        var leptonXConfig = {
+            defaultSettings: {
+                appearance: 'system',
+                containerWidth: 'full',
+            },
+        };
+    </script>
+    <script src="/app/libs/jquery/jquery.min.js"></script>
+    <script id="bootstrap-js" src="/app/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/app/libs/jstree/jstree.min.js"></script>
+    <script src="/app/libs/fullcalendar/main.min.js"></script>
+    <script src="/app/libs/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+    <script src="/app/js/lepton-x.bundle.min.js"></script>
+    <script src="/app/libs/apexcharts/apexcharts.min.js"></script>
+    <script src="/app/js/demo-dashboard.bundle.min.js"></script>
+    <script src="/app/libs/datatables.net/jquery.dataTables.min.js"></script>
+    <script src="/app/libs/datatables.net-bs5/dataTables.bootstrap5.min.js"></script>
+    <script src="/app/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script src="/app/libs/toastr/toastr.min.js"></script>
+    <script src="/app/js/demo.bundle.min.js"></script>
+
+    <script type="text/javascript">
+        (function () {
+            leptonx.LanguageSettingEvent.on(function (event) {
+                // handle language change here
+                console.log(event);
+            });
+        })();
+
+        (function () {
+            document.addEventListener('DOMContentLoaded', function () {
+                leptonx.init.run(); // init leptonx
+            });
+        })();
+    </script>
+
+    <script type="text/javascript">
+        var direction = document.querySelector('html').getAttribute('dir');
+        (function () {
+            function createStyleUrl(theme, direction) {
+                const styleName = direction === 'rtl' ? `${theme}.rtl` : theme;
+                return `/app/css/${styleName}.css`;
+            }
+
+            function createId(theme, type) {
+                return theme && `lpx-theme-${type}-${theme}`;
+            }
+
+            function isAlreadyLoaded(id) {
+                return document.querySelector(`link[id^="lpx-theme-${id}-"]`)?.id;
+            }
+
+            function loadThemeCSS(key, event, cssPrefix, force = false) {
+                const newThemeId = createId(event.detail.theme, key);
+                const previousThemeId = createId(event.detail.previousTheme, key);
+
+                const loadedCSS = isAlreadyLoaded(key);
+                if (newThemeId !== loadedCSS || force) {
+                    leptonx.replaceStyleWith(
+                        createStyleUrl(cssPrefix + event.detail.theme, document.documentElement.dir),
+                        newThemeId,
+                        previousThemeId || loadedCSS
+                    );
+                }
+            }
+
+            function loadLayoutCSS(direction) {
+                leptonx.replaceStyleWith(
+                    createStyleUrl('layout-bundle', direction),
+                    `lpx-layout-bundle-style-${direction}`,
+                    `lpx-layout-bundle-style-${direction === 'rtl' ? 'ltr' : 'rtl'}`
+                );
+            }
+
+            leptonx.CSSLoadEvent.on(event => {
+                loadHighlightTheme(event);
+                loadThemeCSS('bootstrap', event, 'bootstrap-');
+                loadThemeCSS('color', event, '');
+            });
+
+            leptonx.LanguageDirectionEvent.on(event => {
+                //TODO: find a better way ltr/rtl change
+                window.location.reload();
+                /*
+                 const direction = event.detail.direction;
+                 loadLayoutCSS(direction);
+                 ['bootstrap', 'color'].forEach(selector => {
+                   const currentThemeElem = document.querySelector(`link[id^="lpx-theme-${selector}-"]`);
+                   let styleUrl = currentThemeElem.href.split('/app/css/');
+                   styleUrl = styleUrl[1].split('.css');
+                   if (direction === 'rtl') {
+                     styleUrl = '/app/css/' + styleUrl[0] + '.rtl.css';
+                   } else {
+                     styleUrl = '/app/css/' + styleUrl[0].replace('.rtl', '') + '.css';
+                   }
+                   leptonx.replaceStyleWith(
+                           styleUrl,
+                           currentThemeElem.id,
+                           currentThemeElem.id
+                   );
+                 });
+
+                 const AttachmentMap = {
+
+                   right: direction === 'rtl' ? 'left' : 'right',
+                   left:  direction === 'rtl' ? 'right' : 'left'
+                 }
+
+                 function bsPopperConfig(defaultBsPopperConfig) {
+                   return {
+                     placement: AttachmentMap[defaultBsPopperConfig.placement] || defaultBsPopperConfig.placement,
+                   };
+                 }
+                 leptonx.initBootstrap(bsPopperConfig);
+                 */
+            });
+
+
+
+            function loadHighlightTheme(event) {
+                const theme = event.detail.theme === 'dark' ? '-dark' : '';
+                const link = document.createElement('link');
+                link.setAttribute('rel', 'stylesheet');
+                link.setAttribute('href', `/app/libs/highlight.js/styles/github${theme}.css`);
+                link.setAttribute('id', `github${theme}-css`);
+                const elem = document.querySelector(`#github${theme}-css`);
+                if (elem) {
+                    elem.parentNode.removeChild(elem);
+                }
+                document.head.appendChild(link);
+            }
+        })();
+    </script>
+
+</body>
+
+</html>

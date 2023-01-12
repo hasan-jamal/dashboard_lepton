@@ -1,0 +1,3084 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script type="text/javascript">
+        var languages = JSON.parse('{"en":{"displayName":"English","shortName":"EN"},"tr":{"displayName":"Turkish","shortName":"TR"},"de":{"displayName":"German","shortName":"DE"},"ch":{"displayName":"Chinese","shortName":"CH"},"ar":{"displayName":"Arabic - RTL","shortName":"AR","isRTL":true}}');
+    </script>
+
+    <title>Lepton-X | Welcome</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/assets/img/logo-favicon_1.svg">
+ 
+    <link rel="stylesheet" href="/app/libs/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
+<link rel="stylesheet" href="/app/libs/bootstrap-icons/font/bootstrap-icons.css">
+<link rel="stylesheet" id="lpx-js-bundle-style" href="/app/css/js-bundle.css">
+<link rel="stylesheet" id="lpx-layout-bundle-style-ltr" href="/app/css/layout-bundle.css">
+<link rel="stylesheet" href="/app/css/demo.css">
+<link rel="stylesheet" type="text/css" href="/app/libs/highlight.js/styles/stackoverflow-dark.css">
+
+<link href="/app/libs/jstree/themes/default/style.min.css" type="text/css" rel="stylesheet">
+<link href="/app/libs/toastr/toastr.min.css" type="text/css" rel="stylesheet">
+<link href="/app/libs/fullcalendar/main.min.css" type="text/css" rel="stylesheet">
+<script src="/app/js/head.bundle.min.js"></script>
+<link href="/app/libs/perfect-scrollbar/css/perfect-scrollbar.css" type="text/css" rel="stylesheet">
+<link href="/app/libs/select2/css/select2.min.css" type="text/css" rel="stylesheet">
+<link href="/app/libs/dropzone/dropzone.css" type="text/css" rel="stylesheet">
+
+    
+    
+  <link type="text/css" data-thor="true" id="lpx-theme-bootstrap-light" href="/app/css/bootstrap-light.css" rel="stylesheet"><link type="text/css" data-thor="true" id="lpx-theme-color-light" href="/app/css/light.css" rel="stylesheet"><link type="text/css" data-thor="true" id="github-css" href="/app/libs/highlight.js/styles/github.css" rel="stylesheet"></head>
+
+  
+  
+  <body class="lpx-theme-light"> 
+      <div id="lpx-wrapper">
+        <div class="lpx-sidebar-container"><div class="lpx-sidebar lpx-scroll-container" id="lpx-sidebar">
+  <nav class="lpx-nav">
+    <div class="lpx-logo-container">
+      <div class="lpx-brand-logo"></div>
+      <i class="lpx-icon bi bi-filter-left menu-collapse-icon hidden-in-hover-trigger" aria-hidden="true" data-lpx-toggle="sidebar"></i>
+    </div>
+    
+    <div class="lpx-menu-filter" data-lpx-menu-filter="sidebar">
+      <i class="lpx-icon bi bi-filter menu-filter-icon" aria-hidden="true"></i>
+      <input class="menu-filter-input hidden-in-hover-trigger" type="text" placeholder="Filter Menu">
+      <span class="menu-filter-clear hidden"><i class="lpx-icon bi bi-x clear-icon" aria-hidden="true"></i></span>
+    </div>
+    
+    <ul class="lpx-nav-menu" id="desktop-sidebar">
+  
+    <li class="outer-menu-item" id=""><a class="lpx-menu-item-link lpx-menu-item " href="/">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-house-door-fill" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Home</span>
+    
+  
+</a>
+
+</li>
+  
+    <li class="outer-menu-item" id="favorites"><a class="lpx-menu-item-link lpx-menu-item ">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-star-fill" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Favorite Pages</span>
+    
+  
+</a>
+
+</li>
+  
+    <li class="outer-menu-item" id="components"><a class="lpx-menu-item-link lpx-menu-item ">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-boxes" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Components</span>
+    
+  
+  <i class="dd-icon hidden-in-hover-trigger lpx-caret bi-chevron-down" aria-hidden="true"></i>
+  
+</a>
+
+<ul class="lpx-inner-menu hidden-in-hover-trigger collapsed">
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item ">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-bootstrap" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Bootstrap Components</span>
+    
+  
+  <i class="dd-icon hidden-in-hover-trigger lpx-caret bi-chevron-down" aria-hidden="true"></i>
+  
+</a>
+
+<ul class="lpx-inner-menu hidden-in-hover-trigger collapsed">
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/components/bootstrap/accordion">
+  
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Accordion</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/components/bootstrap/alert">
+  
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Alert</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/components/bootstrap/badge">
+  
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Badge</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/components/bootstrap/border">
+  
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Border</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/components/bootstrap/breadcrumb">
+  
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Breadcrumb</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/components/bootstrap/button">
+  
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Button</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/components/bootstrap/button-group">
+  
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Button Group</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/components/bootstrap/card">
+  
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Card</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/components/bootstrap/carousel">
+  
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Carousel</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/components/bootstrap/close-button">
+  
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Close Button</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/components/bootstrap/collapse">
+  
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Collapse</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/components/bootstrap/dropdown">
+  
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Dropdown</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/components/bootstrap/icon">
+  
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Icon</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/components/bootstrap/list-group">
+  
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">List Group</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/components/bootstrap/modal">
+  
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Modal</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/components/bootstrap/nav">
+  
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Nav</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/components/bootstrap/navbar">
+  
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Navbar</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/components/bootstrap/offcanvas">
+  
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Offcanvas</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/components/bootstrap/pagination">
+  
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Pagination</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/components/bootstrap/progress">
+  
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Progress Bar</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/components/bootstrap/scrollspy">
+  
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Scrollspy</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/components/bootstrap/spinner">
+  
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Spinners</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/components/bootstrap/table">
+  
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Table</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/components/bootstrap/tooltip-popover">
+  
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Tooltips Popover</span>
+    
+  
+</a>
+
+
+  </li>
+  
+</ul>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item ">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-input-cursor-text" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Bootstrap Forms</span>
+    
+  
+  <i class="dd-icon hidden-in-hover-trigger lpx-caret bi-chevron-down" aria-hidden="true"></i>
+  
+</a>
+
+<ul class="lpx-inner-menu hidden-in-hover-trigger collapsed">
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/components/bootstrap/form-controls">
+  
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Form Controls</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/components/bootstrap/select">
+  
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Select</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/components/bootstrap/check-radio">
+  
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Check & Radio</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/components/bootstrap/input-group">
+  
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Input Groups</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/components/bootstrap/form-validation">
+  
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Validation</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/components/bootstrap/form-layout">
+  
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Layout</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/components/bootstrap/range">
+  
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Range</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/components/bootstrap/floating-label">
+  
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Floating Label</span>
+    
+  
+</a>
+
+
+  </li>
+  
+</ul>
+
+
+  </li>
+  
+</ul>
+
+</li>
+  
+    <li class="outer-menu-item" id=""><a class="lpx-menu-item-link lpx-menu-item ">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-collection" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Libraries</span>
+    
+  
+  <i class="dd-icon hidden-in-hover-trigger lpx-caret bi-chevron-down" aria-hidden="true"></i>
+  
+</a>
+
+<ul class="lpx-inner-menu hidden-in-hover-trigger collapsed">
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/libraries/apexcharts">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-pie-chart" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">ApexCharts</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/libraries/datatables">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-table" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">DataTables</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/libraries/dropzone">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-upload" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Dropzone</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/libraries/fullcalendar">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-calendar3" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">FullCalendar</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/libraries/input-mask">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-textarea-t" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">InputMask</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/libraries/jsTree">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-diagram-3" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">jsTree</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/libraries/select2">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-textarea" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Select2</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/libraries/toastr">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-usb-c-fill" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Toastr</span>
+    
+  
+</a>
+
+
+  </li>
+  
+</ul>
+
+</li>
+  
+    <li class="outer-menu-item" id=""><a class="lpx-menu-item-link lpx-menu-item ">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-grid-3x3-gap-fill" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Custom Pages</span>
+    
+  
+  <i class="dd-icon hidden-in-hover-trigger lpx-caret bi-chevron-down" aria-hidden="true"></i>
+  
+</a>
+
+<ul class="lpx-inner-menu hidden-in-hover-trigger collapsed">
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/custom-pages/blog">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-file-richtext" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Blog</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/custom-pages/blog-detail">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-body-text" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Blog Detail</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/custom-pages/faq">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-patch-question" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">FAQ</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/custom-pages/file-management">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-folder2-open" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">File Management </span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/custom-pages/forgot-password">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-asterisk" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Forgot Password </span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/custom-pages/invoice">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-receipt-cutoff" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Invoice</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/custom-pages/login">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-box-arrow-in-right" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Login</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/custom-pages/pricing">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-cash-coin" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Pricing</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/custom-pages/private-chat">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-chat-left-text " aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Private Chat</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/custom-pages/register">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-person-bounding-box" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Register</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/custom-pages/subscriptions-list">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-ui-checks" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Subscriptions List</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/custom-pages/qa-list-page">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-ui-checks" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">QA List</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/custom-pages/qa-detail-page">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-ui-checks" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">QA Detail</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/custom-pages/user-profile">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-person-circle" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">User Profile</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/custom-pages/wizard-horizontal">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-magic" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Wizard Horizontal</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/custom-pages/wizard-vertical">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-magic" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Wizard Vertical</span>
+    
+  
+</a>
+
+
+  </li>
+  
+</ul>
+
+</li>
+  
+    <li class="outer-menu-item" id=""><a class="lpx-menu-item-link lpx-menu-item ">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-window-sidebar" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Widgets</span>
+    
+  
+  <i class="dd-icon hidden-in-hover-trigger lpx-caret bi-chevron-down" aria-hidden="true"></i>
+  
+</a>
+
+<ul class="lpx-inner-menu hidden-in-hover-trigger collapsed">
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/widgets/charts">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-pie-chart-fill" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Charts</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/widgets/feeds">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-chat-right-text" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Feeds</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/widgets/list">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-list-ul" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">List</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/widgets/mixed">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-shuffle" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Mixed</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/widgets/statistics">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-bar-chart-fill" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Statistics</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/widgets/tables">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-table" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Tables</span>
+    
+  
+</a>
+
+
+  </li>
+  
+</ul>
+
+</li>
+  
+</ul>
+
+  </nav>
+</div>
+ 
+<script>
+  window.sideMenuItems = [{"text":"Home","href":"/","icon":"bi bi-house-door-fill","mobile":true},{"text":"Favorite Pages","icon":"bi bi-star-fill","id":"favorites"},{"text":"Components","icon":"bi bi-boxes","mobile":true,"children":[{"text":"Bootstrap Components","icon":"bi bi-bootstrap","children":[{"text":"Accordion","href":"/components/bootstrap/accordion"},{"text":"Alert","href":"/components/bootstrap/alert"},{"text":"Badge","href":"/components/bootstrap/badge"},{"text":"Border","href":"/components/bootstrap/border"},{"text":"Breadcrumb","href":"/components/bootstrap/breadcrumb"},{"text":"Button","href":"/components/bootstrap/button"},{"text":"Button Group","href":"/components/bootstrap/button-group"},{"text":"Card","href":"/components/bootstrap/card"},{"text":"Carousel","href":"/components/bootstrap/carousel"},{"text":"Close Button","href":"/components/bootstrap/close-button"},{"text":"Collapse","href":"/components/bootstrap/collapse"},{"text":"Dropdown","href":"/components/bootstrap/dropdown"},{"text":"Icon","href":"/components/bootstrap/icon"},{"text":"List Group","href":"/components/bootstrap/list-group"},{"text":"Modal","href":"/components/bootstrap/modal"},{"text":"Nav","href":"/components/bootstrap/nav"},{"text":"Navbar","href":"/components/bootstrap/navbar"},{"text":"Offcanvas","href":"/components/bootstrap/offcanvas"},{"text":"Pagination","href":"/components/bootstrap/pagination"},{"text":"Progress Bar","href":"/components/bootstrap/progress"},{"text":"Scrollspy","href":"/components/bootstrap/scrollspy"},{"text":"Spinners","href":"/components/bootstrap/spinner"},{"text":"Table","href":"/components/bootstrap/table"},{"text":"Tooltips Popover","href":"/components/bootstrap/tooltip-popover"}]},{"text":"Bootstrap Forms","children":[{"text":"Form Controls","href":"/components/bootstrap/form-controls"},{"text":"Select","href":"/components/bootstrap/select"},{"text":"Check & Radio","href":"/components/bootstrap/check-radio"},{"text":"Input Groups","href":"/components/bootstrap/input-group"},{"text":"Validation","href":"/components/bootstrap/form-validation"},{"text":"Layout","href":"/components/bootstrap/form-layout"},{"text":"Range","href":"/components/bootstrap/range"},{"text":"Floating Label","href":"/components/bootstrap/floating-label"}],"icon":"bi bi-input-cursor-text"}],"id":"components"},{"text":"Libraries","icon":"bi bi-collection","children":[{"text":"ApexCharts","href":"/libraries/apexcharts","icon":"bi bi-pie-chart"},{"text":"DataTables","href":"/libraries/datatables","icon":"bi bi-table"},{"text":"Dropzone","href":"/libraries/dropzone","icon":"bi bi-upload"},{"text":"FullCalendar","href":"/libraries/fullcalendar","icon":"bi bi-calendar3"},{"text":"InputMask","href":"/libraries/input-mask","icon":"bi bi-textarea-t"},{"text":"jsTree","href":"/libraries/jsTree","icon":"bi bi-diagram-3"},{"text":"Select2","href":"/libraries/select2","icon":"bi bi-textarea"},{"text":"Toastr","href":"/libraries/toastr","icon":"bi bi-usb-c-fill"}]},{"text":"Custom Pages","icon":"bi bi-grid-3x3-gap-fill","children":[{"text":"Blog","href":"/custom-pages/blog","icon":"bi bi-file-richtext"},{"text":"Blog Detail","href":"/custom-pages/blog-detail","icon":"bi bi-body-text"},{"text":"FAQ","href":"/custom-pages/faq","icon":"bi bi-patch-question"},{"text":"File Management ","href":"/custom-pages/file-management","icon":"bi bi-folder2-open"},{"text":"Forgot Password ","href":"/custom-pages/forgot-password","icon":"bi bi-asterisk"},{"text":"Invoice","href":"/custom-pages/invoice","icon":"bi bi-receipt-cutoff"},{"text":"Login","href":"/custom-pages/login","icon":"bi bi-box-arrow-in-right"},{"text":"Pricing","href":"/custom-pages/pricing","icon":"bi bi-cash-coin"},{"text":"Private Chat","href":"/custom-pages/private-chat","icon":"bi bi-chat-left-text "},{"text":"Register","href":"/custom-pages/register","icon":"bi bi-person-bounding-box"},{"text":"Subscriptions List","href":"/custom-pages/subscriptions-list","icon":"bi bi-ui-checks"},{"text":"QA List","href":"/custom-pages/qa-list-page","icon":"bi bi-ui-checks"},{"text":"QA Detail","href":"/custom-pages/qa-detail-page","icon":"bi bi-ui-checks"},{"text":"User Profile","href":"/custom-pages/user-profile","icon":"bi bi-person-circle"},{"text":"Wizard Horizontal","href":"/custom-pages/wizard-horizontal","icon":"bi bi-magic"},{"text":"Wizard Vertical","href":"/custom-pages/wizard-vertical","icon":"bi bi-magic"}]},{"text":"Widgets","icon":"bi bi-window-sidebar","children":[{"text":"Charts","href":"/widgets/charts","icon":"bi bi-pie-chart-fill"},{"text":"Feeds","href":"/widgets/feeds","icon":"bi bi-chat-right-text"},{"text":"List","href":"/widgets/list","icon":"bi bi-list-ul"},{"text":"Mixed","href":"/widgets/mixed","icon":"bi bi-shuffle"},{"text":"Statistics","href":"/widgets/statistics","icon":"bi bi-bar-chart-fill"},{"text":"Tables","href":"/widgets/tables","icon":"bi bi-table"}]}]
+</script></div>
+
+        <div class="lpx-content-container">  
+          
+          <div class="lpx-topbar-container">
+  <div class="lpx-topbar">
+    <div class="lpx-breadcrumb-wrapper d-flex">
+    <nav aria-label="breadcrumb" class="lpx-breadcrumb-container">
+  <ol class="lpx-breadcrumb">
+    
+    <li class="lpx-breadcrumb-item " data-lpx-toggle="breadcrumb">
+      <i class="lpx-breadcrumb-item-icon bi-house-door-fill" aria-hidden="true"></i>
+      
+      <a href="">Home</a>
+       
+    </li>
+    <li class="lpx-breadcrumb-separator"><i class="lpx-icon bi bi-chevron-right"></i></li>
+    
+    <li class="lpx-breadcrumb-item " data-lpx-toggle="breadcrumb">
+      <i class="lpx-breadcrumb-item-icon bi-pie-chart-fill" aria-hidden="true"></i>
+      
+      <span class="lpx-breadcrumb-item-text">Dashboards</span>
+       
+      <i class="lpx-caret bi-chevron-down" aria-hidden="true"></i>
+      <div class="lpx-breadcrumb-dropdown">
+        <ul class="lpx-breadcrumb-dropdown-container">
+          
+          <li class="lpx-breadcrumb-dropdown-item active">
+            <a href="">Overview </a>
+          </li>
+          
+          <li class="lpx-breadcrumb-dropdown-item false">
+            <a href="">Alternative Dashboards </a>
+          </li>
+          
+          <li class="lpx-breadcrumb-dropdown-item false">
+            <a href="">Landing </a>
+          </li>
+          
+        </ul>
+      </div>
+      
+    </li>
+    <li class="lpx-breadcrumb-separator"><i class="lpx-icon bi bi-chevron-right"></i></li>
+    
+    <li class="lpx-breadcrumb-item " data-lpx-toggle="breadcrumb">
+      <i class="lpx-breadcrumb-item-icon " aria-hidden="true"></i>
+      
+      <a href="">Overview</a>
+       
+    </li>
+    <li class="lpx-breadcrumb-separator"><i class="lpx-icon bi bi-chevron-right"></i></li>
+    
+  </ol>
+</nav>
+
+    
+        <div class="lpx-favorite">
+   <span class="lpx-favorite-unselected d-none">
+     <span class="lpx-favorite-span">Add Favorite</span> 
+     <i class="bi bi-star" data-bs-toggle="tooltip" data-bs-placement="left" title="Add Favorite"></i>  
+   </span>
+   <span class="lpx-favorite-selected d-none">
+     <span class="lpx-favorite-span">Remove Favorite</span> 
+     <i class="bi bi-star-fill text-brand" data-bs-toggle="tooltip" data-bs-placement="left" title="Remove Favorite"></i>
+   </span>
+ </div>  
+    
+    
+    </div>
+  </div>
+</div>
+  
+
+          <div class="lpx-content-wrapper">
+            <div class="lpx-content">
+            
+  <div class="row">
+    <div class="col d-flex align-items-baseline justify-content-between">
+      <h1 class="lpx-main-title">Buttons</h1>
+    </div>
+  </div>
+  <div class="card">
+    <div class="alert alert-light d-flex align-items-center m-0">
+      <i class="bi bi-info-circle fs-1 text-info"></i>
+      <div class="ps-3">
+        <p class="mb-0">LeptonX uses
+          <a href="https://getbootstrap.com/docs/5.0/components/buttons/" class="alert-link text-decoration-none" target="_blank">Bootstrap Button's <i class="bi bi-box-arrow-up-right"></i></a> component's latest version.
+          <br>
+          Use Bootstrap’s custom button styles for actions in forms, dialogs, and more with support for multiple sizes,
+          states, and more.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Examples</h3>
+          <p>Bootstrap includes several predefined button styles, each serving its own semantic purpose, with a few
+            extras thrown in for more control.</p>
+        </div>
+        <div class="card-body">
+          
+<div class="row">
+    <div class="col-12 col-lg-6"> 
+        <h5 class="text-uppercase">Preview</h5>
+         <button type="button" class="btn btn-primary mb-1"> Primary </button>
+  <button type="button" class="btn btn-secondary mb-1">Secondary</button>
+  <button type="button" class="btn btn-success mb-1">Success</button>
+  <button type="button" class="btn btn-danger mb-1">Danger</button>
+  <button type="button" class="btn btn-warning mb-1">Warning</button>
+  <button type="button" class="btn btn-info mb-1">Info</button>
+  <button type="button" class="btn btn-light mb-1">Light</button>
+  <button type="button" class="btn btn-dark mb-1">Dark</button>
+  <button type="button" class="btn btn-link mb-1">Link</button>
+  
+    </div>
+    <div class="col-12 col-lg-6">
+        
+
+<h5 class="mt-4 mt-md-0">HTML</h5>
+<div class="highlight-prev">
+    <div class="button-area">
+        <button class="copy-button">Copy</button>
+    </div>
+
+    <pre><code class="language-html" style="height:inheritpx;">&lt;button type=&#34;button&#34; class=&#34;btn btn-primary mb-1&#34;&gt;Primary&lt;/button&gt;
+&lt;button type=&#34;button&#34; class=&#34;btn btn-secondary mb-1&#34;&gt;Secondary&lt;/button&gt;
+&lt;button type=&#34;button&#34; class=&#34;btn btn-success mb-1&#34;&gt;Success&lt;/button&gt;
+&lt;button type=&#34;button&#34; class=&#34;btn btn-danger mb-1&#34;&gt;Danger&lt;/button&gt;
+&lt;button type=&#34;button&#34; class=&#34;btn btn-warning mb-1&#34;&gt;Warning&lt;/button&gt;
+&lt;button type=&#34;button&#34; class=&#34;btn btn-info mb-1&#34;&gt;Info&lt;/button&gt;
+&lt;button type=&#34;button&#34; class=&#34;btn btn-light mb-1&#34;&gt;Light&lt;/button&gt;
+&lt;button type=&#34;button&#34; class=&#34;btn btn-dark mb-1&#34;&gt;Dark&lt;/button&gt;
+&lt;button type=&#34;button&#34; class=&#34;btn btn-link mb-1&#34;&gt;Link&lt;/button&gt;
+ </code></pre>
+</div>
+
+
+    </div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Button tags</h3>
+          <p>The <code>.btn</code> classes are designed to be used with the <code>&lt;button&gt;</code> element.
+            However, you can also use these classes on <code>&lt;a&gt;</code> or <code>&lt;input&gt;</code> elements
+            (though some browsers may apply a slightly different rendering).</p>
+          <p>When using button classes on <code>&lt;a&gt;</code> elements that are used to trigger in-page functionality
+            (like collapsing content), rather than linking to new pages or sections within the current page, these links
+            should be given a <code>role="button"</code> to appropriately convey their purpose to assistive technologies
+            such as screen readers.</p>
+        </div>
+        <div class="card-body">
+          
+<div class="row">
+    <div class="col-12 col-lg-6"> 
+        <h5 class="text-uppercase">Preview</h5>
+        
+  <a class="btn btn-primary" href="#" role="button">Link</a>
+  <button class="btn btn-primary" type="submit">Button</button>
+  <input class="btn btn-primary" type="button" value="Input">
+  <input class="btn btn-primary" type="submit" value="Submit">
+  <input class="btn btn-primary" type="reset" value="Reset">
+  
+    </div>
+    <div class="col-12 col-lg-6">
+        
+
+<h5 class="mt-4 mt-md-0">HTML</h5>
+<div class="highlight-prev">
+    <div class="button-area">
+        <button class="copy-button">Copy</button>
+    </div>
+
+    <pre><code class="language-html" style="height:inheritpx;">&lt;a class=&#34;btn btn-primary&#34; href=&#34;#&#34; role=&#34;button&#34;&gt;Link&lt;/a&gt;
+&lt;button class=&#34;btn btn-primary&#34; type=&#34;submit&#34;&gt;Button&lt;/button&gt;
+&lt;input class=&#34;btn btn-primary&#34; type=&#34;button&#34; value=&#34;Input&#34; /&gt;
+&lt;input class=&#34;btn btn-primary&#34; type=&#34;submit&#34; value=&#34;Submit&#34; /&gt;
+&lt;input class=&#34;btn btn-primary&#34; type=&#34;reset&#34; value=&#34;Reset&#34; /&gt;
+ </code></pre>
+</div>
+
+
+    </div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Outline</h3>
+          <p>In need of a button, but not the hefty background colors they bring? Replace the default modifier classes
+            with the <code>.btn-outline-*</code> ones to remove all background images and colors on any button.</p>
+        </div>
+        <div class="card-body">
+          
+<div class="row">
+    <div class="col-12 col-lg-6"> 
+        <h5 class="text-uppercase">Preview</h5>
+        
+  <button type="button" class="btn btn-outline-primary mb-1">Primary</button>
+  <button type="button" class="btn btn-outline-secondary mb-1">Secondary</button>
+  <button type="button" class="btn btn-outline-success mb-1">Success</button>
+  <button type="button" class="btn btn-outline-danger mb-1">Danger</button>
+  <button type="button" class="btn btn-outline-warning mb-1">Warning</button>
+  <button type="button" class="btn btn-outline-info mb-1">Info</button>
+  <button type="button" class="btn btn-outline-light mb-1">Light</button>
+  <button type="button" class="btn btn-outline-dark mb-1">Dark</button>
+  
+    </div>
+    <div class="col-12 col-lg-6">
+        
+
+<h5 class="mt-4 mt-md-0">HTML</h5>
+<div class="highlight-prev">
+    <div class="button-area">
+        <button class="copy-button">Copy</button>
+    </div>
+
+    <pre><code class="language-html" style="height:inheritpx;">&lt;button type=&#34;button&#34; class=&#34;btn btn-outline-primary mb-1&#34;&gt;Primary&lt;/button&gt;
+&lt;button type=&#34;button&#34; class=&#34;btn btn-outline-secondary mb-1&#34;&gt;Secondary&lt;/button&gt;
+&lt;button type=&#34;button&#34; class=&#34;btn btn-outline-success mb-1&#34;&gt;Success&lt;/button&gt;
+&lt;button type=&#34;button&#34; class=&#34;btn btn-outline-danger mb-1&#34;&gt;Danger&lt;/button&gt;
+&lt;button type=&#34;button&#34; class=&#34;btn btn-outline-warning mb-1&#34;&gt;Warning&lt;/button&gt;
+&lt;button type=&#34;button&#34; class=&#34;btn btn-outline-info mb-1&#34;&gt;Info&lt;/button&gt;
+&lt;button type=&#34;button&#34; class=&#34;btn btn-outline-light mb-1&#34;&gt;Light&lt;/button&gt;
+&lt;button type=&#34;button&#34; class=&#34;btn btn-outline-dark mb-1&#34;&gt;Dark&lt;/button&gt;
+ </code></pre>
+</div>
+
+
+    </div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Grey</h3>
+          <p>Use <code>grey</code> class to have a custom button style with a grey background color and dark font color. </p>
+        </div>
+        <div class="card-body">
+          
+<div class="row">
+    <div class="col-12 col-lg-6"> 
+        <h5 class="text-uppercase">Preview</h5>
+        
+  <button type="button" class="btn btn-primary grey mb-1">Primary</button>
+  <button type="button" class="btn btn-secondary grey mb-1">Secondary</button>
+  <button type="button" class="btn btn-success grey mb-1">Success</button>
+  <button type="button" class="btn btn-danger grey mb-1">Danger</button>
+  <button type="button" class="btn btn-warning grey mb-1">Warning</button>
+  <button type="button" class="btn btn-info grey mb-1">Info</button>
+  <button type="button" class="btn btn-light grey mb-1">Light</button>
+  <button type="button" class="btn btn-dark grey mb-1">Dark</button>
+  
+    </div>
+    <div class="col-12 col-lg-6">
+        
+
+<h5 class="mt-4 mt-md-0">HTML</h5>
+<div class="highlight-prev">
+    <div class="button-area">
+        <button class="copy-button">Copy</button>
+    </div>
+
+    <pre><code class="language-html" style="height:inheritpx;">&lt;button type=&#34;button&#34; class=&#34;btn btn-primary grey mb-1&#34;&gt;Primary&lt;/button&gt;
+&lt;button type=&#34;button&#34; class=&#34;btn btn-secondary grey mb-1&#34;&gt;Secondary&lt;/button&gt;
+&lt;button type=&#34;button&#34; class=&#34;btn btn-success grey mb-1&#34;&gt;Success&lt;/button&gt;
+&lt;button type=&#34;button&#34; class=&#34;btn btn-danger grey mb-1&#34;&gt;Danger&lt;/button&gt;
+&lt;button type=&#34;button&#34; class=&#34;btn btn-warning grey mb-1&#34;&gt;Warning&lt;/button&gt;
+&lt;button type=&#34;button&#34; class=&#34;btn btn-info grey mb-1&#34;&gt;Info&lt;/button&gt;
+&lt;button type=&#34;button&#34; class=&#34;btn btn-light grey mb-1&#34;&gt;Light&lt;/button&gt;
+&lt;button type=&#34;button&#34; class=&#34;btn btn-dark grey mb-1&#34;&gt;Dark&lt;/button&gt;
+ </code></pre>
+</div>
+
+
+    </div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Soft</h3>
+          <p>Use <code>soft</code> class to have a custom button style with a lighter background color and dark font
+            color. </p>
+        </div>
+        <div class="card-body">
+          
+<div class="row">
+    <div class="col-12 col-lg-6"> 
+        <h5 class="text-uppercase">Preview</h5>
+        
+  <button type="button" class="btn btn-primary soft mb-1">Primary</button>
+  <button type="button" class="btn btn-secondary soft mb-1">Secondary</button>
+  <button type="button" class="btn btn-success soft mb-1">Success</button>
+  <button type="button" class="btn btn-danger soft mb-1">Danger</button>
+  <button type="button" class="btn btn-warning soft mb-1">Warning</button>
+  <button type="button" class="btn btn-info soft mb-1">Info</button>
+  <button type="button" class="btn btn-light soft mb-1">Light</button>
+  <button type="button" class="btn btn-dark soft mb-1">Dark</button>
+  
+    </div>
+    <div class="col-12 col-lg-6">
+        
+
+<h5 class="mt-4 mt-md-0">HTML</h5>
+<div class="highlight-prev">
+    <div class="button-area">
+        <button class="copy-button">Copy</button>
+    </div>
+
+    <pre><code class="language-html" style="height:inheritpx;">&lt;button type=&#34;button&#34; class=&#34;btn btn-primary soft mb-1&#34;&gt;Primary&lt;/button&gt;
+&lt;button type=&#34;button&#34; class=&#34;btn btn-secondary soft mb-1&#34;&gt;Secondary&lt;/button&gt;
+&lt;button type=&#34;button&#34; class=&#34;btn btn-success soft mb-1&#34;&gt;Success&lt;/button&gt;
+&lt;button type=&#34;button&#34; class=&#34;btn btn-danger soft mb-1&#34;&gt;Danger&lt;/button&gt;
+&lt;button type=&#34;button&#34; class=&#34;btn btn-warning soft mb-1&#34;&gt;Warning&lt;/button&gt;
+&lt;button type=&#34;button&#34; class=&#34;btn btn-info soft mb-1&#34;&gt;Info&lt;/button&gt;
+&lt;button type=&#34;button&#34; class=&#34;btn btn-light soft mb-1&#34;&gt;Light&lt;/button&gt;
+&lt;button type=&#34;button&#34; class=&#34;btn btn-dark soft mb-1&#34;&gt;Dark&lt;/button&gt;
+ </code></pre>
+</div>
+
+
+    </div>
+</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Sizes</h3>
+          <p>Fancy larger or smaller buttons? Add <code>.btn-lg</code> or <code>.btn-sm</code> for additional sizes.</p>
+        </div>
+        <div class="card-body">
+          
+<div class="row">
+    <div class="col-12 col-lg-6"> 
+        <h5 class="text-uppercase">Preview</h5>
+        
+  <button type="button" class="btn btn-primary btn-lg mb-1">Large button</button>
+  <button type="button" class="btn btn-secondary btn-lg mb-1">Large button</button>
+  <button type="button" class="btn btn-primary btn-sm mb-1">Small button</button>
+  <button type="button" class="btn btn-secondary btn-sm mb-1">Small button</button>
+  
+    </div>
+    <div class="col-12 col-lg-6">
+        
+
+<h5 class="mt-4 mt-md-0">HTML</h5>
+<div class="highlight-prev">
+    <div class="button-area">
+        <button class="copy-button">Copy</button>
+    </div>
+
+    <pre><code class="language-html" style="height:inheritpx;">&lt;button type=&#34;button&#34; class=&#34;btn btn-primary btn-lg mb-1&#34;&gt;Large button&lt;/button&gt;
+&lt;button type=&#34;button&#34; class=&#34;btn btn-secondary btn-lg mb-1&#34;&gt;
+  Large button
+&lt;/button&gt;
+&lt;button type=&#34;button&#34; class=&#34;btn btn-primary btn-sm mb-1&#34;&gt;Small button&lt;/button&gt;
+&lt;button type=&#34;button&#34; class=&#34;btn btn-secondary btn-sm mb-1&#34;&gt;
+  Small button
+&lt;/button&gt;
+ </code></pre>
+</div>
+
+
+    </div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Active & Disabled States</h3>
+          <p>Make buttons look inactive by adding the <code>disabled</code> boolean attribute to any
+            <code>&lt;button&gt;</code> element. Disabled buttons have <code>pointer-events: none</code> applied to,
+            preventing hover and active states from triggering.</p>
+          <p>Disabled buttons using the <code>&lt;a&gt;</code> element behave a bit different:</p>
+          <ul>
+            <li><code>&lt;a&gt;</code>s don’t support the <code>disabled</code> attribute, so you must add the
+              <code>.disabled</code> class to make it visually appear disabled.</li>
+            <li>Some future-friendly styles are included to disable all <code>pointer-events</code> on anchor buttons.
+            </li>
+            <li>Disabled buttons should include the <code>aria-disabled="true"</code> attribute to indicate the state of
+              the element to assistive technologies.</li>
+          </ul>
+        </div>
+        <div class="card-body">
+          
+<div class="row">
+    <div class="col-12 col-lg-6"> 
+        <h5 class="text-uppercase">Preview</h5>
+        
+  <button class="active btn btn-primary btn-lg mb-1" type="button">
+    <span>Primary button</span>
+  </button>
+  <button class="active btn btn-secondary btn-lg mb-1" type="button">
+    <span>Button</span>
+  </button><br>
+  <button class="btn btn-primary btn-lg mb-1" disabled="disabled" type="button">
+    <span>Primary button</span>
+  </button>
+  <button class="btn btn-secondary btn-lg mb-1" disabled="disabled" type="button">
+    <span>Button</span>
+  </button>
+  <a href="#" class="btn btn-primary btn-lg disabled mb-1" tabindex="-1" role="button" aria-disabled="true">Primary
+    link</a>
+  <a href="#" class="btn btn-secondary btn-lg disabled mb-1" tabindex="-1" role="button" aria-disabled="true">Link</a>
+  
+    </div>
+    <div class="col-12 col-lg-6">
+        
+
+<h5 class="mt-4 mt-md-0">HTML</h5>
+<div class="highlight-prev">
+    <div class="button-area">
+        <button class="copy-button">Copy</button>
+    </div>
+
+    <pre><code class="language-html" style="height:325px;">&lt;button class=&#34;active btn btn-primary btn-lg mb-1&#34; type=&#34;button&#34;&gt;
+  &lt;span&gt;Primary button&lt;/span&gt;
+&lt;/button&gt;
+&lt;button class=&#34;active btn btn-secondary btn-lg mb-1&#34; type=&#34;button&#34;&gt;
+  &lt;span&gt;Button&lt;/span&gt;&lt;/button
+&gt;&lt;br /&gt;
+&lt;button class=&#34;btn btn-primary btn-lg mb-1&#34; disabled=&#34;disabled&#34; type=&#34;button&#34;&gt;
+  &lt;span&gt;Primary button&lt;/span&gt;
+&lt;/button&gt;
+&lt;button class=&#34;btn btn-secondary btn-lg mb-1&#34; disabled=&#34;disabled&#34; type=&#34;button&#34;&gt;
+  &lt;span&gt;Button&lt;/span&gt;
+&lt;/button&gt;
+&lt;a
+  href=&#34;#&#34;
+  class=&#34;btn btn-primary btn-lg disabled mb-1&#34;
+  tabindex=&#34;-1&#34;
+  role=&#34;button&#34;
+  aria-disabled=&#34;true&#34;
+  &gt;Primary link&lt;/a
+&gt;
+&lt;a
+  href=&#34;#&#34;
+  class=&#34;btn btn-secondary btn-lg disabled mb-1&#34;
+  tabindex=&#34;-1&#34;
+  role=&#34;button&#34;
+  aria-disabled=&#34;true&#34;
+  &gt;Link&lt;/a
+&gt;
+ </code></pre>
+</div>
+
+
+    </div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Block buttons</h3>
+          <p>Create responsive stacks of full-width, “block buttons” like those in Bootstrap 4 with a mix of our display
+            and gap utilities. By using utilities instead of button specific classes, we have much greater control over
+            spacing, alignment, and responsive behaviors.</p>
+          <p>Here we create a responsive variation, starting with vertically stacked buttons until the <code>md</code>
+            breakpoint, where <code>.d-md-block</code> replaces the <code>.d-grid</code> class, thus nullifying the
+            <code>gap-2</code> utility. Resize your browser to see them change.</p>
+          <p>You can adjust the width of your block buttons with grid column width classes. For example, for a
+            half-width “block button”, use <code>.col-6</code>. Center it horizontally with <code>.mx-auto</code>, too.
+          </p>
+          <p>Additional utilities can be used to adjust the alignment of buttons when horizontal. Here we’ve taken our
+            previous responsive example and added some flex utilities and a margin utility on the button to right align
+            the buttons when they’re no longer stacked.</p>
+        </div>
+        <div class="card-body">
+          
+<div class="row">
+    <div class="col-12 col-lg-6"> 
+        <h5 class="text-uppercase">Preview</h5>
+        
+  <div class="d-grid gap-2 mb-3">
+    <button class="btn btn-primary" type="button">Button</button>
+    <button class="btn btn-primary" type="button">Button</button>
+  </div>
+  <div class="d-grid gap-2 d-md-block mb-3">
+    <button class="btn btn-primary" type="button">Button</button>
+    <button class="btn btn-primary" type="button">Button</button>
+  </div>
+  <div class="d-grid gap-2 col-6 mx-auto mb-3">
+    <button class="btn btn-primary" type="button">Button</button>
+    <button class="btn btn-primary" type="button">Button</button>
+  </div>
+  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+    <button class="btn btn-primary" type="button">Button</button>
+    <button class="btn btn-primary" type="button">Button</button>
+  </div>
+  
+    </div>
+    <div class="col-12 col-lg-6">
+        
+
+<h5 class="mt-4 mt-md-0">HTML</h5>
+<div class="highlight-prev">
+    <div class="button-area">
+        <button class="copy-button">Copy</button>
+    </div>
+
+    <pre><code class="language-html" style="height:378px;">&lt;div class=&#34;d-grid gap-2 mb-3&#34;&gt;
+  &lt;button class=&#34;btn btn-primary&#34; type=&#34;button&#34;&gt;Button&lt;/button&gt;
+  &lt;button class=&#34;btn btn-primary&#34; type=&#34;button&#34;&gt;Button&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&#34;d-grid gap-2 d-md-block mb-3&#34;&gt;
+  &lt;button class=&#34;btn btn-primary&#34; type=&#34;button&#34;&gt;Button&lt;/button&gt;
+  &lt;button class=&#34;btn btn-primary&#34; type=&#34;button&#34;&gt;Button&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&#34;d-grid gap-2 col-6 mx-auto mb-3&#34;&gt;
+  &lt;button class=&#34;btn btn-primary&#34; type=&#34;button&#34;&gt;Button&lt;/button&gt;
+  &lt;button class=&#34;btn btn-primary&#34; type=&#34;button&#34;&gt;Button&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&#34;d-grid gap-2 d-md-flex justify-content-md-end&#34;&gt;
+  &lt;button class=&#34;btn btn-primary&#34; type=&#34;button&#34;&gt;Button&lt;/button&gt;
+  &lt;button class=&#34;btn btn-primary&#34; type=&#34;button&#34;&gt;Button&lt;/button&gt;
+&lt;/div&gt;
+ </code></pre>
+</div>
+
+
+    </div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Toggle states</h3>
+          <p>Add <code>data-bs-toggle="button"</code> to toggle a button’s <code>active</code> state. If you’re
+            pre-toggling a button, you must manually add the <code>.active</code> class <strong>and</strong>
+            <code>aria-pressed="true"</code> to ensure that it is conveyed appropriately to assistive technologies.</p>
+        </div>
+        <div class="card-body">
+          
+<div class="row">
+    <div class="col-12 col-lg-6"> 
+        <h5 class="text-uppercase">Preview</h5>
+        
+  <div class="mb-2">
+    <button type="button" class="btn btn-primary" data-bs-toggle="button" autocomplete="off">Toggle button</button>
+    <button type="button" class="btn btn-primary active" data-bs-toggle="button" autocomplete="off" aria-pressed="true">Active toggle button</button>
+    <button type="button" class="btn btn-primary" disabled="" data-bs-toggle="button" autocomplete="off">Disabled toggle
+      button</button>
+  </div>
+  <div>
+    <a href="#" class="btn btn-primary" role="button" data-bs-toggle="button">Toggle link</a>
+    <a href="#" class="btn btn-primary active" role="button" data-bs-toggle="button" aria-pressed="true">Active toggle
+      link</a>
+    <a href="#" class="btn btn-primary disabled" tabindex="-1" aria-disabled="true" role="button" data-bs-toggle="button">Disabled toggle link</a>
+  </div>
+  
+    </div>
+    <div class="col-12 col-lg-6">
+        
+
+<h5 class="mt-4 mt-md-0">HTML</h5>
+<div class="highlight-prev">
+    <div class="button-area">
+        <button class="copy-button">Copy</button>
+    </div>
+
+    <pre><code class="language-html" style="height:310px;">&lt;div class=&#34;mb-2&#34;&gt;
+  &lt;button
+    type=&#34;button&#34;
+    class=&#34;btn btn-primary&#34;
+    data-bs-toggle=&#34;button&#34;
+    autocomplete=&#34;off&#34;
+  &gt;
+    Toggle button
+  &lt;/button&gt;
+  &lt;button
+    type=&#34;button&#34;
+    class=&#34;btn btn-primary active&#34;
+    data-bs-toggle=&#34;button&#34;
+    autocomplete=&#34;off&#34;
+    aria-pressed=&#34;true&#34;
+  &gt;
+    Active toggle button
+  &lt;/button&gt;
+  &lt;button
+    type=&#34;button&#34;
+    class=&#34;btn btn-primary&#34;
+    disabled
+    data-bs-toggle=&#34;button&#34;
+    autocomplete=&#34;off&#34;
+  &gt;
+    Disabled toggle button
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;div&gt;
+  &lt;a href=&#34;#&#34; class=&#34;btn btn-primary&#34; role=&#34;button&#34; data-bs-toggle=&#34;button&#34;
+    &gt;Toggle link&lt;/a
+  &gt;
+  &lt;a
+    href=&#34;#&#34;
+    class=&#34;btn btn-primary active&#34;
+    role=&#34;button&#34;
+    data-bs-toggle=&#34;button&#34;
+    aria-pressed=&#34;true&#34;
+    &gt;Active toggle link&lt;/a
+  &gt;
+  &lt;a
+    href=&#34;#&#34;
+    class=&#34;btn btn-primary disabled&#34;
+    tabindex=&#34;-1&#34;
+    aria-disabled=&#34;true&#34;
+    role=&#34;button&#34;
+    data-bs-toggle=&#34;button&#34;
+    &gt;Disabled toggle link&lt;/a
+  &gt;
+&lt;/div&gt;
+ </code></pre>
+</div>
+
+
+    </div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Icons</h3>
+        </div>
+        <div class="card-body">
+          
+<div class="row">
+    <div class="col-12 col-lg-6"> 
+        <h5 class="text-uppercase">Preview</h5>
+        
+  <button class="btn btn-warning" type="button">
+    <i class="bi bi-pencil"></i> <span>Edit</span>
+  </button>
+  <button class="btn btn-info" type="button">
+    <i class="bi bi-info-circle"></i> <span>Information</span>
+  </button>
+  
+    </div>
+    <div class="col-12 col-lg-6">
+        
+
+<h5 class="mt-4 mt-md-0">HTML</h5>
+<div class="highlight-prev">
+    <div class="button-area">
+        <button class="copy-button">Copy</button>
+    </div>
+
+    <pre><code class="language-html" style="height:inheritpx;">&lt;button class=&#34;btn btn-warning&#34; type=&#34;button&#34;&gt;
+  &lt;i class=&#34;bi bi-pencil&#34;&gt;&lt;/i&gt; &lt;span&gt;Edit&lt;/span&gt;
+&lt;/button&gt;
+&lt;button class=&#34;btn btn-info&#34; type=&#34;button&#34;&gt;
+  &lt;i class=&#34;bi bi-info-circle&#34;&gt;&lt;/i&gt; &lt;span&gt;Information&lt;/span&gt;
+&lt;/button&gt;
+ </code></pre>
+</div>
+
+
+    </div>
+</div>
+
+        </div>
+      </div>
+    </div>
+  </div>  
+            </div>
+          </div>
+          
+          <div class="lpx-footbar-container">
+            <div class="lpx-footbar"> 
+                <div class="lpx-footbar-copyright">
+                  <span>2022©</span> 
+                  <a href="https://leptontheme.com/" target="_blank">Lepton Theme</a>
+                  <span>by</span> 
+                  <a href="https://volosoft.com/" target="_blank">Volosoft</a>
+                </div>  
+                <div class="lpx-footbar-solo-links"> 
+                  <a href="#">About</a> 
+                  <a href="#">Privacy</a> 
+                  <a href="#">Contact</a> 
+                </div>   
+            </div>
+          </div>
+
+        </div>
+        <div class="lpx-mobile-navbar-container">
+  <div class="lpx-mobile-navbar">
+    <ul class="lpx-mobile-nav-tabs">
+      
+      <li class="lpx-mobile-nav-tab">
+        <a href="#" class="lpx-mobile-nav-item">
+          <i class="menu-item-icon bi bi bi-house-door-fill" aria-hidden="true"></i>
+          <span class="mobile-item-text">Home</span>
+        </a>
+      </li>
+      
+      <li class="lpx-mobile-nav-tab">
+        <a href="#" class="lpx-mobile-nav-item">
+          <i class="menu-item-icon bi bi bi-boxes" aria-hidden="true"></i>
+          <span class="mobile-item-text">Components</span>
+        </a>
+      </li>
+      
+
+      <li class="lpx-mobile-nav-tab menu-toggle">
+        <a href="#" class="lpx-mobile-hamburger" data-lpx-mobile-menu-toggle="routes">
+          <span class="hamburger-icon" aria-hidden="true">
+            <span class="icon-part"></span>
+            <span class="icon-part"></span>
+            <span class="icon-part"></span>
+            <span class="icon-part"></span>
+            <span class="icon-part"></span>
+            <span class="icon-part"></span>
+          </span>
+        </a>
+      </li>
+
+      <li class="lpx-mobile-nav-tab">
+        <a class="lpx-mobile-nav-item" data-lpx-mobile-menu-toggle="settings">
+          <i class="menu-item-icon bi bi-gear-wide-connected" aria-hidden="true"></i>
+          <span class="mobile-item-text">Settings</span>
+        </a>
+      </li>
+      <li class="lpx-mobile-nav-tab">
+        <a class="lpx-mobile-nav-item" data-lpx-mobile-menu-toggle="user">
+          <div class="lpx-avatar ">
+  <img class="lpx-avatar-img" src="/assets/img/avatars/user-07.png" alt="avatar">
+</div>
+
+          <span class="mobile-item-text">johndoe</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="lpx-mobile-menu hidden">
+    <div class="lpx-logo-container">
+        <a href="/">
+            <div class="lpx-brand-logo"></div>
+        </a>
+    </div>
+    <ul class="lpx-nav-menu d-none" data-lpx-mobile-menu="routes">
+      
+      <li class="outer-menu-item"><a class="lpx-menu-item-link lpx-menu-item ">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-star-fill" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Favorite Pages</span>
+    
+  
+</a>
+
+</li>
+      
+      <li class="outer-menu-item"><a class="lpx-menu-item-link lpx-menu-item ">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-collection" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Libraries</span>
+    
+  
+  <i class="dd-icon hidden-in-hover-trigger lpx-caret bi-chevron-down" aria-hidden="true"></i>
+  
+</a>
+
+<ul class="lpx-inner-menu hidden-in-hover-trigger collapsed">
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/libraries/apexcharts">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-pie-chart" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">ApexCharts</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/libraries/datatables">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-table" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">DataTables</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/libraries/dropzone">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-upload" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Dropzone</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/libraries/fullcalendar">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-calendar3" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">FullCalendar</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/libraries/input-mask">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-textarea-t" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">InputMask</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/libraries/jsTree">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-diagram-3" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">jsTree</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/libraries/select2">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-textarea" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Select2</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/libraries/toastr">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-usb-c-fill" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Toastr</span>
+    
+  
+</a>
+
+
+  </li>
+  
+</ul>
+
+</li>
+      
+      <li class="outer-menu-item"><a class="lpx-menu-item-link lpx-menu-item ">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-grid-3x3-gap-fill" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Custom Pages</span>
+    
+  
+  <i class="dd-icon hidden-in-hover-trigger lpx-caret bi-chevron-down" aria-hidden="true"></i>
+  
+</a>
+
+<ul class="lpx-inner-menu hidden-in-hover-trigger collapsed">
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/custom-pages/blog">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-file-richtext" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Blog</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/custom-pages/blog-detail">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-body-text" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Blog Detail</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/custom-pages/faq">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-patch-question" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">FAQ</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/custom-pages/file-management">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-folder2-open" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">File Management </span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/custom-pages/forgot-password">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-asterisk" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Forgot Password </span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/custom-pages/invoice">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-receipt-cutoff" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Invoice</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/custom-pages/login">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-box-arrow-in-right" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Login</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/custom-pages/pricing">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-cash-coin" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Pricing</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/custom-pages/private-chat">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-chat-left-text " aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Private Chat</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/custom-pages/register">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-person-bounding-box" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Register</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/custom-pages/subscriptions-list">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-ui-checks" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Subscriptions List</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/custom-pages/qa-list-page">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-ui-checks" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">QA List</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/custom-pages/qa-detail-page">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-ui-checks" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">QA Detail</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/custom-pages/user-profile">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-person-circle" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">User Profile</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/custom-pages/wizard-horizontal">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-magic" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Wizard Horizontal</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/custom-pages/wizard-vertical">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-magic" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Wizard Vertical</span>
+    
+  
+</a>
+
+
+  </li>
+  
+</ul>
+
+</li>
+      
+      <li class="outer-menu-item"><a class="lpx-menu-item-link lpx-menu-item ">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-window-sidebar" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Widgets</span>
+    
+  
+  <i class="dd-icon hidden-in-hover-trigger lpx-caret bi-chevron-down" aria-hidden="true"></i>
+  
+</a>
+
+<ul class="lpx-inner-menu hidden-in-hover-trigger collapsed">
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/widgets/charts">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-pie-chart-fill" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Charts</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/widgets/feeds">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-chat-right-text" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Feeds</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/widgets/list">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-list-ul" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">List</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/widgets/mixed">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-shuffle" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Mixed</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/widgets/statistics">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-bar-chart-fill" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Statistics</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " href="/widgets/tables">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-table" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Tables</span>
+    
+  
+</a>
+
+
+  </li>
+  
+</ul>
+
+</li>
+      
+    </ul>
+
+    <ul class="lpx-nav-menu d-none" data-lpx-mobile-menu="settings">
+      
+      <li class="outer-menu-item"><a class="lpx-menu-item-link lpx-menu-item " data-lpx-setting-group="appearance">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-palette-fill" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Appearance</span>
+    
+  
+  <i class="dd-icon hidden-in-hover-trigger lpx-caret bi-chevron-down" aria-hidden="true"></i>
+  
+</a>
+
+<ul class="lpx-inner-menu hidden-in-hover-trigger collapsed">
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " data-lpx-setting="light">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-sun-fill" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Light</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " data-lpx-setting="dim">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-brightness-alt-high-fill" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Semi-dark</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " data-lpx-setting="dark">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-moon-fill" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Dark</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item selected" data-lpx-setting="system">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-laptop-fill" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">System</span>
+    
+  
+</a>
+
+
+  </li>
+  
+</ul>
+
+</li>
+      
+      <li class="outer-menu-item"><a class="lpx-menu-item-link lpx-menu-item " data-lpx-setting-group="language">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-globe" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Language</span>
+    
+  
+  <i class="dd-icon hidden-in-hover-trigger lpx-caret bi-chevron-down" aria-hidden="true"></i>
+  
+</a>
+
+<ul class="lpx-inner-menu hidden-in-hover-trigger collapsed">
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item selected" data-lpx-setting="EN">
+  
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">English / EN</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " data-lpx-setting="TR">
+  
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Turkish / TR</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " data-lpx-setting="DE">
+  
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">German / DE</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " data-lpx-setting="CH">
+  
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Chinese / CH</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " data-lpx-setting="AR" data-lpx-language-direction="rtl">
+  
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Arabic - RTL / AR</span>
+    
+  
+</a>
+
+
+  </li>
+  
+</ul>
+
+</li>
+      
+    </ul>
+
+    
+
+    <ul class="lpx-nav-menu d-none" data-lpx-mobile-menu="user">
+      <div class="d-flex ps-3 pe-3">
+        <div class="lpx-avatar me-2">
+  <img class="lpx-avatar-img" src="/assets/img/avatars/user-07.png" alt="avatar">
+</div>
+
+        <div class="d-flex flex-column" style="line-height: normal;"> 
+          <span class="color-active-text">John Doe</span>
+          <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="eb818483858f848eab868a8287c5888486">[email&#160;protected]</a></span>
+        </div>
+      </div>
+
+      
+        <li class="outer-menu-item"><a class="lpx-menu-item-link lpx-menu-item " href="/profile">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-sliders" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Manage Your Profile</span>
+    
+  
+</a>
+
+</li> 
+      
+        <li class="outer-menu-item"><a class="lpx-menu-item-link lpx-menu-item " href="/security-logs">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-list-ul" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">My Security Logs</span>
+    
+  
+</a>
+
+</li> 
+      
+        <li class="outer-menu-item"><a class="lpx-menu-item-link lpx-menu-item " href="/sign-out">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-box-arrow-right" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Sign Out</span>
+    
+  
+</a>
+
+</li> 
+      
+    </ul>
+  </div>
+</div>
+
+
+        <div class="lpx-toolbar-container">
+          
+<nav class="lpx-toolbar" id="lpx-toolbar">
+  
+<div class="lpx-context-menu" data-lpx-context-menu="user-context-menu">
+  
+  <div class="lpx-context-menu--header">
+     
+  <div class="lpx-user-ctx-header">
+    <div class="lpx-user-ctx-img"><div class="lpx-avatar ">
+  <img class="lpx-avatar-img" src="/assets/img/avatars/user-07.png" alt="avatar">
+</div>
+</div>
+    <div class="lpx-user-ctx-info"> 
+      <span class="lpx-context-menu-user-name">John Doe</span>
+      <span class="lpx-context-menu-user-email"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="acc6c3c4c282c8c3c9ecc1cdc5c082cfc3c1">[email&#160;protected]</a></span>
+    </div>
+  </div>  
+  
+  </div>
+  
+  
+    <div class="lpx-user-ctx-body"><ul class="lpx-nav-menu" id="toolbar-body-routes">
+  
+    <li class="outer-menu-item" id=""><a class="lpx-menu-item-link lpx-menu-item ">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi-sliders" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Manage Your Profile</span>
+    
+  
+</a>
+
+</li>
+  
+    <li class="outer-menu-item" id=""><a class="lpx-menu-item-link lpx-menu-item ">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi-list-ul" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">My Security Logs</span>
+    
+  
+</a>
+
+</li>
+  
+</ul>
+</div>
+  
+    
+      <div class="lpx-context-menu--footer">
+        
+    <div class="lpx-user-ctx-footer">
+      <ul class="lpx-nav-menu" id="toolbar-footer-routes">
+  
+    <li class="outer-menu-item" id=""><a class="lpx-menu-item-link lpx-menu-item " href="/custom-pages/login">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi-box-arrow-right" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Sign Out</span>
+    
+  
+</a>
+
+</li>
+  
+</ul>
+
+    </div>
+  
+      </div>
+    
+</div>
+
+
+
+
+  <ul class="lpx-nav-menu">
+    <li class="outer-menu-item lpx-user-menu" id="userItem">
+      <a href="#" class="lpx-menu-item-link" data-lpx-ctx-toggle="user-context-menu">
+        <div class="lpx-avatar ">
+  <img class="lpx-avatar-img" src="/assets/img/avatars/user-07.png" alt="avatar">
+</div>
+
+
+        <span class="lpx-menu-item-text">johndoe</span>
+      </a>
+    </li>
+
+    <li class="outer-menu-item">
+      <a href="#" class="lpx-menu-item-link active-menu-item" data-bs-toggle="tooltip" data-bs-placement="left" title="You are using this tenant's account as administrator. Click to back your account.">
+        <span class="lpx-menu-item-icon">
+          <small class="menu-item-badge bg-warning"><i class="bi bi-arrow-counterclockwise" style="font-size: 16px;"></i></small>
+          <i class="lpx-icon action-icon bi bi-person-workspace" aria-hidden="true"></i>
+        </span>
+      </a>
+    </li>
+
+
+    <li class="outer-menu-item" id="notification-bar">
+      <a href="#" class="lpx-menu-item-link active-menu-item" data-lpx-ctx-toggle="notification-bar">
+        <span class="lpx-menu-item-icon">
+          <small class="menu-item-badge">2</small>
+          <i class="lpx-icon action-icon bi bi-bell-fill" aria-hidden="true"></i>
+        </span>
+      </a>
+      
+
+    <div class="lpx-context-menu" data-lpx-context-menu="notification-bar">
+  
+   
+
+<ul class="lpx-nav-menu-notification">
+    <li class="outer-menu-item" id="">
+        <a class="lpx-menu-item-link lpx-menu-item">
+            <span class="lpx-menu-item-icon">
+                <i class="lpx-icon outer-icon bi bi-bell-fill" aria-hidden="true"></i>
+            </span>
+            <span class="lpx-menu-item-text">Notification
+                <span class="lpx-badge">2 NEW</span>
+            </span>
+            <span data-lpx-close="notification-bar">
+                <i class="lpx-icon bi bi-x outer-icon dd-icon" aria-hidden="true"></i>
+            </span>
+        </a>
+    </li>
+
+    <li class="outer-menu-item">
+        <div class="lpx-menu-item-title"> TODAY </div>
+
+        <ul class="lpx-notification-items lpx-inner-menu">
+            <li class="lpx-notification-item unread">
+                <a class="lpx-notification-item-link">
+                    <img src="../../../assets/img/avatars/user-07.png" class="lpx-notification-user-img">
+                    <div>
+                        <p class="lpx-notification-text"><span class="lpx-notification-text-highlight">John Doe</span>
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                        <small class="lpx-notification-text-small">1h ago</small>
+                    </div>
+                </a>
+            </li>
+            <li class="lpx-notification-item unread">
+                <a class="lpx-notification-item-link">
+                    <div class="lpx-notification-member-container">
+                        <i class="lpx-notification-member-icon bi bi-bell-fill"></i>
+                    </div>
+                    <div>
+                        <p class="lpx-notification-text"><span class="lpx-notification-text-highlight">Marcus
+                                Carder</span> Nam cursus nibh turpis </p>
+                        <small class="lpx-notification-text-small">2h ago</small>
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+    </li>
+
+    <li class="outer-menu-item">
+        <div class="lpx-menu-item-title">YESTERDAY</div>
+
+        <ul class="lpx-notification-items lpx-inner-menu">
+            <li class="lpx-notification-item">
+                <a class="lpx-notification-item-link">
+                    <img src="../../../assets/img/avatars/user-03.png" class="lpx-notification-user-img">
+                    <div>
+                        <p class="lpx-notification-text"><span class="lpx-notification-text-highlight">Jocelyn
+                                Geidt</span> Vivamus suscipit felis ligula, ut rutrum mi sollicitudin sed. </p>
+                        <small class="lpx-notification-text-small">15:00pm</small>
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+    </li>
+
+    <li class="outer-menu-item">
+        <div class="lpx-menu-item-title">19.07.2022 </div>
+
+        <ul class="lpx-notification-items lpx-inner-menu">
+            <li class="lpx-notification-item">
+                <a class="lpx-notification-item-link">
+                    <img src="../../../assets/img/avatars/user-04.png" class="lpx-notification-user-img">
+                    <div>
+                        <p class="lpx-notification-text"><span class="lpx-notification-text-highlight">Carla
+                                Bator</span> Etiam non interdum mi. </p>
+                        <small class="lpx-notification-text-small">18:25pm</small>
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+    </li>
+
+    </ul>
+
+    <div class="lpx-button-container">
+        <button class="lpx-button">See All Notifications</button>
+    </div>
+
+    
+    
+</div>
+
+
+    </li>
+    <li class="outer-menu-item">
+      <a href="#" class="lpx-menu-item-link active-menu-item">
+        <span class="lpx-menu-item-icon">
+          <small class="menu-item-badge">13</small>
+          <i class="lpx-icon bi bi-chat-left-dots-fill" aria-hidden="true"></i>
+        </span>
+      </a>
+    </li>
+    <li class="outer-menu-item">
+      <a href="#" class="lpx-menu-item-link">
+        <span class="lpx-menu-item-icon">
+          <i class="lpx-icon action-icon bi bi-bag-fill" aria-hidden="true"></i>
+        </span>
+      </a>
+    </li>
+    <li class="outer-menu-item">
+      <a href="#" class="lpx-menu-item-link">
+        <span class="lpx-menu-item-icon">
+          <i class="lpx-icon bi bi-calendar-check-fill" aria-hidden="true"></i>
+        </span>
+      </a>
+    </li>
+  </ul>
+</nav>
+ 
+<div class="lpx-settings" id="lpx-settings">
+  
+  <div id="appearance" class="setting-icon" data-lpx-setting-icon="appearance" data-lpx-setting-id="settings-context-menu">
+    
+    <div class="setting">
+       
+        <i class="bi bi-laptop-fill"></i>
+      
+      
+    </div>
+  </div>
+  
+  <div id="containerWidth" class="setting-icon" data-lpx-setting-icon="containerWidth" data-lpx-setting-id="settings-context-menu">
+    
+    <div class="setting">
+       
+        <i class="bi bi-layout-three-columns"></i>
+      
+      
+    </div>
+  </div>
+  
+  <div id="language" class="setting-icon" data-lpx-setting-icon="language" data-lpx-setting-id="settings-context-menu">
+    
+    <div class="setting">
+      
+      
+        <span>EN</span>
+      
+    </div>
+  </div>
+  
+  <div class="setting-icon">
+    <i class="bi bi-gear-wide-connected" aria-hidden="true" data-lpx-ctx-toggle="settings-context-menu"></i>
+  </div>
+  <div class="lpx-context-menu" data-lpx-context-menu="settings-context-menu">
+  
+   <ul class="lpx-nav-menu" id="settings-routes">
+  
+    <li class="outer-menu-item" id=""><a class="lpx-menu-item-link lpx-menu-item ">
+  
+    
+<span class="lpx-menu-item-icon">
+  <i class="lpx-icon outer-icon bi bi-gear-wide-connected" aria-hidden="true"></i>
+</span>
+<span class="lpx-menu-item-text">General Settings</span>
+<span data-lpx-close="settings-context-menu">
+  <i class="lpx-icon bi bi-x outer-icon dd-icon" aria-hidden="true"></i>
+</span>
+
+  
+  
+</a>
+
+</li>
+  
+    <li class="outer-menu-item" id="appearance"><a class="lpx-menu-item-link lpx-menu-item " data-lpx-setting-group="appearance">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-palette-fill" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Appearance</span>
+    
+  
+  <i class="dd-icon hidden-in-hover-trigger lpx-caret bi-chevron-down" aria-hidden="true"></i>
+  
+</a>
+
+<ul class="lpx-inner-menu hidden-in-hover-trigger collapsed">
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " data-lpx-setting="light">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-sun-fill" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Light</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " data-lpx-setting="dim">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-brightness-alt-high-fill" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Semi-dark</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " data-lpx-setting="dark">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-moon-fill" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Dark</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item selected" data-lpx-setting="system">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-laptop-fill" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">System</span>
+    
+  
+</a>
+
+
+  </li>
+  
+</ul>
+
+</li>
+  
+    <li class="outer-menu-item" id="containerWidth"><a class="lpx-menu-item-link lpx-menu-item " data-lpx-setting-group="containerWidth">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-aspect-ratio" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Container Width</span>
+    
+  
+  <i class="dd-icon hidden-in-hover-trigger lpx-caret bi-chevron-down" aria-hidden="true"></i>
+  
+</a>
+
+<ul class="lpx-inner-menu hidden-in-hover-trigger collapsed">
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " data-lpx-setting="boxed">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-square" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Boxed</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item selected" data-lpx-setting="fixed">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-layout-three-columns" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Fixed</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item selected" data-lpx-setting="full">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-code-square" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Fluid</span>
+    
+  
+</a>
+
+
+  </li>
+  
+</ul>
+
+</li>
+  
+    <li class="outer-menu-item" id="language"><a class="lpx-menu-item-link lpx-menu-item " data-lpx-setting-group="language">
+  
+      <span class="lpx-menu-item-icon"><i class="lpx-icon bi bi-globe" aria-hidden="true"></i></span>
+      
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Language</span>
+    
+  
+  <i class="dd-icon hidden-in-hover-trigger lpx-caret bi-chevron-down" aria-hidden="true"></i>
+  
+</a>
+
+<ul class="lpx-inner-menu hidden-in-hover-trigger collapsed">
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item selected" data-lpx-setting="EN">
+  
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">English / EN</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " data-lpx-setting="TR">
+  
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Turkish / TR</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " data-lpx-setting="DE">
+  
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">German / DE</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " data-lpx-setting="CH">
+  
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Chinese / CH</span>
+    
+  
+</a>
+
+
+  </li>
+  
+  <li class="lpx-inner-menu-item">
+    <a class="lpx-menu-item-link lpx-menu-item " data-lpx-setting="AR" data-lpx-language-direction="rtl">
+  
+      <span class="lpx-menu-item-text hidden-in-hover-trigger">Arabic - RTL / AR</span>
+    
+  
+</a>
+
+
+  </li>
+  
+</ul>
+
+</li>
+  
+</ul>
+ 
+    
+</div>
+
+</div>
+
+          
+
+    <div class="lpx-context-menu" data-lpx-context-menu="notification-bar">
+  
+   
+
+<ul class="lpx-nav-menu-notification">
+    <li class="outer-menu-item" id="">
+        <a class="lpx-menu-item-link lpx-menu-item">
+            <span class="lpx-menu-item-icon">
+                <i class="lpx-icon outer-icon bi bi-bell-fill" aria-hidden="true"></i>
+            </span>
+            <span class="lpx-menu-item-text">Notification
+                <span class="lpx-badge">2 NEW</span>
+            </span>
+            <span data-lpx-close="notification-bar">
+                <i class="lpx-icon bi bi-x outer-icon dd-icon" aria-hidden="true"></i>
+            </span>
+        </a>
+    </li>
+
+    <li class="outer-menu-item">
+        <div class="lpx-menu-item-title"> TODAY </div>
+
+        <ul class="lpx-notification-items lpx-inner-menu">
+            <li class="lpx-notification-item unread">
+                <a class="lpx-notification-item-link">
+                    <img src="../../../assets/img/avatars/user-07.png" class="lpx-notification-user-img">
+                    <div>
+                        <p class="lpx-notification-text"><span class="lpx-notification-text-highlight">John Doe</span>
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                        <small class="lpx-notification-text-small">1h ago</small>
+                    </div>
+                </a>
+            </li>
+            <li class="lpx-notification-item unread">
+                <a class="lpx-notification-item-link">
+                    <div class="lpx-notification-member-container">
+                        <i class="lpx-notification-member-icon bi bi-bell-fill"></i>
+                    </div>
+                    <div>
+                        <p class="lpx-notification-text"><span class="lpx-notification-text-highlight">Marcus
+                                Carder</span> Nam cursus nibh turpis </p>
+                        <small class="lpx-notification-text-small">2h ago</small>
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+    </li>
+
+    <li class="outer-menu-item">
+        <div class="lpx-menu-item-title">YESTERDAY</div>
+
+        <ul class="lpx-notification-items lpx-inner-menu">
+            <li class="lpx-notification-item">
+                <a class="lpx-notification-item-link">
+                    <img src="../../../assets/img/avatars/user-03.png" class="lpx-notification-user-img">
+                    <div>
+                        <p class="lpx-notification-text"><span class="lpx-notification-text-highlight">Jocelyn
+                                Geidt</span> Vivamus suscipit felis ligula, ut rutrum mi sollicitudin sed. </p>
+                        <small class="lpx-notification-text-small">15:00pm</small>
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+    </li>
+
+    <li class="outer-menu-item">
+        <div class="lpx-menu-item-title">19.07.2022 </div>
+
+        <ul class="lpx-notification-items lpx-inner-menu">
+            <li class="lpx-notification-item">
+                <a class="lpx-notification-item-link">
+                    <img src="../../../assets/img/avatars/user-04.png" class="lpx-notification-user-img">
+                    <div>
+                        <p class="lpx-notification-text"><span class="lpx-notification-text-highlight">Carla
+                                Bator</span> Etiam non interdum mi. </p>
+                        <small class="lpx-notification-text-small">18:25pm</small>
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+    </li>
+
+    </ul>
+
+    <div class="lpx-button-container">
+        <button class="lpx-button">See All Notifications</button>
+    </div>
+
+    
+    
+</div>
+
+ 
+        </div>
+
+
+
+      </div> 
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
+  var leptonXConfig = {
+    defaultSettings: {
+      appearance: 'system',
+      containerWidth: 'full',
+    },
+  };
+</script>
+<script src="/app/libs/jquery/jquery.min.js"></script>
+<script id="bootstrap-js" src="/app/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/app/libs/jstree/jstree.min.js"></script>
+<script src="/app/libs/fullcalendar/main.min.js"></script>
+<script src="/app/libs/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+<script src="/app/js/lepton-x.bundle.min.js"></script>
+
+<script src="/app/libs/datatables.net/jquery.dataTables.min.js"></script>
+<script src="/app/libs/datatables.net-bs5/dataTables.bootstrap5.min.js"></script>
+<script src="/app/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+<script src="/app/libs/toastr/toastr.min.js"></script>
+<script src="/app/js/demo.bundle.min.js"></script>
+
+<script type="text/javascript">
+    (function () {
+        leptonx.LanguageSettingEvent.on(function (event) {
+            // handle language change here
+            console.log(event);
+        });
+    })();
+
+    (function () {
+        document.addEventListener('DOMContentLoaded', function () {
+            leptonx.init.run(); // init leptonx
+        });
+    })();
+</script>
+
+<script type="text/javascript">
+  var direction = document.querySelector('html').getAttribute('dir');
+  (function () {
+    function createStyleUrl(theme, direction) {
+      const styleName = direction === 'rtl' ? `${theme}.rtl` : theme;
+      return `/app/css/${styleName}.css`;
+    }
+
+    function createId(theme, type) {
+      return theme && `lpx-theme-${type}-${theme}`;
+    }
+
+    function isAlreadyLoaded(id) {
+      return document.querySelector(`link[id^="lpx-theme-${id}-"]`)?.id;
+    }
+
+    function loadThemeCSS(key, event, cssPrefix, force=false) {
+      const newThemeId = createId(event.detail.theme, key);
+      const previousThemeId = createId(event.detail.previousTheme, key);
+
+      const loadedCSS = isAlreadyLoaded(key);
+      if (newThemeId !== loadedCSS ||force) {
+        leptonx.replaceStyleWith(
+          createStyleUrl(cssPrefix + event.detail.theme, document.documentElement.dir),
+          newThemeId,
+          previousThemeId || loadedCSS
+        );
+      }
+    }
+
+    function loadLayoutCSS(direction) {
+      leptonx.replaceStyleWith(
+                createStyleUrl('layout-bundle', direction),
+                `lpx-layout-bundle-style-${direction}`,
+                `lpx-layout-bundle-style-${direction === 'rtl' ? 'ltr' : 'rtl'}`
+        );
+    }
+
+    leptonx.CSSLoadEvent.on(event => {
+      loadHighlightTheme(event);
+      loadThemeCSS('bootstrap', event, 'bootstrap-');
+      loadThemeCSS('color', event, '');
+    });
+
+    leptonx.LanguageDirectionEvent.on(event => {
+      //TODO: find a better way ltr/rtl change
+      window.location.reload();
+     /*
+      const direction = event.detail.direction;
+      loadLayoutCSS(direction);
+      ['bootstrap', 'color'].forEach(selector => {
+        const currentThemeElem = document.querySelector(`link[id^="lpx-theme-${selector}-"]`);
+        let styleUrl = currentThemeElem.href.split('/app/css/');
+        styleUrl = styleUrl[1].split('.css');
+        if (direction === 'rtl') {
+          styleUrl = '/app/css/' + styleUrl[0] + '.rtl.css';
+        } else {
+          styleUrl = '/app/css/' + styleUrl[0].replace('.rtl', '') + '.css';
+        }
+        leptonx.replaceStyleWith(
+                styleUrl,
+                currentThemeElem.id,
+                currentThemeElem.id
+        );
+      });
+
+      const AttachmentMap = {
+
+        right: direction === 'rtl' ? 'left' : 'right',
+        left:  direction === 'rtl' ? 'right' : 'left'
+      }
+
+      function bsPopperConfig(defaultBsPopperConfig) {
+        return {
+          placement: AttachmentMap[defaultBsPopperConfig.placement] || defaultBsPopperConfig.placement,
+        };
+      }
+      leptonx.initBootstrap(bsPopperConfig);
+      */
+    });
+
+
+
+    function loadHighlightTheme(event) {
+      const theme = event.detail.theme === 'dark' ? '-dark' : '';
+      const link = document.createElement('link');
+      link.setAttribute('rel', 'stylesheet');
+      link.setAttribute('href', `/app/libs/highlight.js/styles/github${theme}.css`);
+      link.setAttribute('id', `github${theme}-css`);
+      const elem = document.querySelector(`#github${theme}-css`);
+      if (elem) {
+          elem.parentNode.removeChild(elem);
+      }
+      document.head.appendChild(link);
+    }
+  })();
+</script>
+
+  </body> 
+</html>

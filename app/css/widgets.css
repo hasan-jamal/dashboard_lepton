@@ -1,0 +1,24 @@
+.progress {
+  height: 0.5rem;
+}
+
+textarea {
+  resize: none;
+  height: 40px;
+}
+textarea.small {
+  font-size: 12px;
+  height: 30px;
+}
+
+.card-bg-image {
+  position: absolute;
+  height: 100%;
+  right: 0;
+  bottom: 0;
+}
+.card-bg-image img {
+  width: auto;
+  height: 100%;
+  opacity: 0.03;
+}
